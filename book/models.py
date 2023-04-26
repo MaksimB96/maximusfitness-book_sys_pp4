@@ -9,11 +9,11 @@ from datetime import datetime
 BOOKING_SLOT = {
     ("8 AM", "8 AM"),
     ("10 AM", "10 AM"),
-    ("12 AM", "12 AM"),
-    ("2 AM", "2 AM"),
-    ("4 AM", "4 AM"),
-    ("6 AM", "6 AM"),
-    ("6 AM", "6 AM"),
+    ("12 PM", "12 PM"),
+    ("2 PM", "2 PM"),
+    ("4 PM", "4 PM"),
+    ("6 PM", "6 PM"),
+    ("6 PM", "6 PM"),
 }
 
 
@@ -23,3 +23,17 @@ CONFIRMATION_STATUS = {
     ("declined", "declined"),
     ("pending", "pending"),
 }
+
+
+class Booking(models.Model):
+    """
+    booking class utilizes user/ day/ time and confirmation status above
+    """
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
+    day = models.DateField(default=datetime.now)
+    time = models.CharField(max_length=10, choices=BOOKING_SLOT, default='8 AM')
+    confirm_status = models.CharField(max_length=10, choices=CONFIRMATION_STATUS, default='pending')
+
+    def __str__(self):
+        return f'User: {self.user} Date: {self.day} Time: {self.time} Status: {self.confirm_status}'
