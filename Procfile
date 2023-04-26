@@ -1,0 +1,1 @@
+web: gunicorn maximus_book.wsgi
