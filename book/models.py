@@ -38,16 +38,10 @@ class Booking(models.Model):
     """
 
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
-    service = models.CharField(max_length = 50,
-     choices=SERVICES_CHOICE, default='One on One'
-     )
+    service = models.CharField(max_length = 50, choices=SERVICES_CHOICE, default='One on One')
     day = models.DateField(default=datetime.now)
-    time = models.CharField(max_length=10,
-     choices=BOOKING_SLOT, default='8 AM'
-     )
-    confirm_status = models.CharField(max_length=10,
-     choices=CONFIRMATION_STATUS, default='pending'
-     )
+    time = models.CharField(max_length=10, choices=BOOKING_SLOT, default='8 AM')
+    confirm_status = models.CharField(max_length=10, choices=CONFIRMATION_STATUS, default='pending')
 
     class Meta:
         ordering = ['day']
