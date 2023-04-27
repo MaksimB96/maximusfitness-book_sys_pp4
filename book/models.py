@@ -15,20 +15,3 @@ BOOKING_SLOT = {
     ("6 PM", "6 PM"),
     ("8 PM", "8 PM"),
 }
-
-
-SERVICES_CHOICE = {
-    ("One on One", "One on One"),
-    ("Consultation", "Consultation"),
-    ("PT Package", "PT Package"),
-}
-
-
-# Confirmation Status of booking
-CONFIRMATION_STATUS = {
-    ("confirmed", "confirmed"),
-    ("declined", "declined"),
-    ("pending", "pending"),
-}
-
-
