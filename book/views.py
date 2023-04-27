@@ -3,6 +3,4 @@ from django.http import HttpResponse
 
 
 def home(request):
-
-
-return HttpResponse("working connection!")
+    return HttpResponse("working connection!")
