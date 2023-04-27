@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.views.generic.base import TemplateView
 
 
-def home(request):
-    return HttpResponse("working connection!")
+class HomeTemplate(TemplateView):
+    template_name = "index.html"
