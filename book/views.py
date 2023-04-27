@@ -1,4 +1,8 @@
 from django.shortcuts import render
-from .models import Booking
+from django.http import HttpResponse
 
 
+def home(request):
+
+
+return HttpResponse("working connection!")
