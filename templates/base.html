@@ -58,21 +58,41 @@
 
     {% block content %}
     <!-- main content -->
-    {% endblock %}
+    {% endblock content%}
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-white footer-style">
-        <div class="cointainer">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5>Stay In Contact!</h5>
-                    <p>
-                        Follow us on our socials to keep up to date with anything new
-                    </p>
+    <div class="cointainer my-5">
+        <footer class="text-center text-lg-start text-white footer-style" style="background-color: #3e4551">
+            <div class="cointainer p-4 pb-0">
+                <!-- basic text section leading to socials -->
+                <section>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                            <h5>Stay In Contact!</h5>
+                            <p>
+                                Follow us on our socials to keep up to date with anything new!
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="mb-4">
+                <!-- socials -->
+                <section class="mb-4 text-center">
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-google"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
+                </section>
+                <!-- copyright code from  -->
+                <div class="text-center p-3">
+                    &copy; 2023 Copyright:
+                    <a href="#" class="text-white">
+                        Maximus Fitness
+                    </a>
                 </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 </body>
 
 </html>
