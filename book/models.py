@@ -33,6 +33,7 @@ class Booking(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     day = models.DateField(default=datetime.now)
     time = models.CharField(max_length=10, choices=BOOKING_SLOT, default='8 AM')
+    client_req = models.TextField()
     confirm_status = models.CharField(max_length=10, choices=CONFIRMATION_STATUS, default='pending')
 
     def __str__(self):
