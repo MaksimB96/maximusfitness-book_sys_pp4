@@ -1,4 +1,18 @@
+/* ------------------------Root Colors */
+
+:root{
+    --brand1: #F81517;
+    --brand2: #000000;
+    --brand3: #ffffff;
+    --bg-op-1: #dfe0e1;
+    --bg-op-2: #f6f7f8;
+}
+
+/* ------------------------Navbar */
+
 .navbar-brand>img {
     height: 50px;
     margin-left: 20px;
 }
+
+/* ------------------------Footer */
