@@ -1,6 +1,6 @@
 /* ------------------------Root Colors */
 
-:root{
+:root {
     --brand1: #F81517;
     --brand2: #000000;
     --brand3: #ffffff;
@@ -8,7 +8,21 @@
     --bg-op-2: #f6f7f8;
 }
 
+/* ------------------------Fonts */
+
+.font-head{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.font-body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* ------------------------Navbar */
+
+.navbar {
+    background-color: var(--bg-op-1);
+}
 
 .navbar-brand>img {
     height: 50px;
