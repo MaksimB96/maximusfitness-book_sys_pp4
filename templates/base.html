@@ -26,55 +26,17 @@
 <body class="d-flex flex-column min-vh-100">
 
     <!-- Navbar -->
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{}">
-                <img src="{% static 'img/croppedlogo.png' %}" alt="Logo" width="40" height="40"
-                    class="d-inline-block align-text-top">
-                Maximus Fitness
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     {% block content %}
     <!-- main content -->
     {% endblock content%}
+
     <!-- Footer -->
     <div class="cointainer my-5">
-        <footer class="text-center text-lg-start text-white footer-style" style="background-color: #3e4551">
+        <footer class="text-center text-lg-start text-white footer-style" style="background-color: black">
             <div class="cointainer p-4 pb-0">
-                <!-- basic text section leading to socials -->
-                <section>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                            <h5>Stay In Contact!</h5>
-                            <p>
-                                Follow us on our socials to keep up to date with anything new!
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <hr class="mb-4">
+
                 <!-- socials -->
                 <section class="mb-4 text-center">
                     <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
@@ -83,6 +45,7 @@
                     <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
                 </section>
+
                 <!-- copyright code from  -->
                 <div class="text-center p-3">
                     &copy; 2023 Copyright:
