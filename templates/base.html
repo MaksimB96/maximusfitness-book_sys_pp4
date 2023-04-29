@@ -20,57 +20,12 @@
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
     <title>Maximus Fitness</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="{% url 'home' %}">
-                    <img src="{% static 'img/croppedlogo.png' %}" alt=logo">
-                </a>
-            </div>
-            <div class="d-none d-md-block">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active nav-item mr-2">
-                        <a href="#" class="nav-link">Sign In</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a href="#" class="nav-link">Login</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    {% block content %}
-    <!-- main content -->
-    {% endblock content%}
-
-    <!-- Footer -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top font-body" style="background: grey;">
-        <div class="col-md-4 d-flex align-items-center">
-            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img src="{% static 'img/m-logo-footer-modified.png' %}" alt="footer-logo" class="bi footer-img" width="50" height="50">
-            </a>
-            <span>&copy; Maximus Fitness 2023</span>
-
-            <ul class="nav col-md-4 list-unstyled d-flex navbar-right">
-                <li class="ms-3">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="ms-3">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
-
-        </div>
-    </footer>
+   
 </body>
 
 </html>
