@@ -1,4 +1,4 @@
-/* -------------------------------------------Root Colors */
+/* -------------------------------------------Root Colors/ set fonts */
 
 :root {
     --brand1: #F81517;
@@ -10,11 +10,11 @@
 
 /* -------------------------------------------Fonts */
 
-.font-head{
+.font-head {
     font-family: 'Montserrat', sans-serif;
 }
 
-.font-body{
+.font-body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -30,3 +30,7 @@
 }
 
 /* -------------------------------------------Footer */
+
+footer img{
+    margin-left: 20px;
+}

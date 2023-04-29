@@ -38,13 +38,7 @@
             <div class="d-none d-md-block">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active nav-item mr-2">
-                        <a href="#" class="nav-link">About</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a href="#" class="nav-link">Book</a>
-                    </li>
-                    <li class="nav-item mr-2">
-                        <a href="#" class="nav-link">Sign Up</a>
+                        <a href="#" class="nav-link">Sign In</a>
                     </li>
                     <li class="nav-item mr-2">
                         <a href="#" class="nav-link">Login</a>
@@ -59,29 +53,24 @@
     {% endblock content%}
 
     <!-- Footer -->
-    <div class="cointainer my-5">
-        <footer class="text-center text-lg-start text-white footer-style" style="background-color: black">
-            <div class="cointainer p-4 pb-0">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-3 border-top font-body" style="background: grey;">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                <img src="{% static 'img/m-logo-footer-modified.png' %}" alt="footer-logo" class="bi footer-img" width="50" height="50">
+            </a>
+            <span>&copy; Maximus Fitness 2023</span>
 
-                <!-- socials -->
-                <section class="mb-4 text-center">
-                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-google"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="btn btn-outline-light btn-floating m-1"><i class="fab fa-linkedin-in"></i></a>
-                </section>
+            <ul class="nav col-md-4 list-unstyled d-flex navbar-right">
+                <li class="ms-3">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="ms-3">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+            </ul>
 
-                <!-- copyright code from  -->
-                <div class="text-center p-3">
-                    &copy; 2023 Copyright:
-                    <a href="#" class="text-white">
-                        Maximus Fitness
-                    </a>
-                </div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 
 </html>
