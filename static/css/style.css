@@ -33,4 +33,8 @@
     color: var(--brand3);
 }
 
+.navbar-dark .navbar-toggler-icon{
+    color: var(--brand3);
+}
+
 /* -------------------------------------------Footer */
