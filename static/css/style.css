@@ -47,8 +47,59 @@
 
 /* -------------------------------------------Footer */
 
-footer{
+footer {
     background: var(--bg-op-1);
+}
+
+.contact-me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-me h4 {
+    border-bottom: 2px solid var(--bg-op-2);
+    margin-bottom: 20px;
+}
+
+.contact-me p {
+    font-size: 15px;
+    margin-bottom: 26px;
+}
+
+.socials {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.socials h4 {
+    border-bottom: 2px solid var(--bg-op-2);
+    margin-bottom: 20px;
+}
+
+.socials p {
+    font-size: 15px;
+    margin-bottom: 26px;
+}
+
+.socials a{
+    color: var(--brand2);
+}
+
+.socials a:hover{
+    color: var(--bg-op-2);
+    transition: 0.2s;
+    text-shadow: 1px 1px 20px rgba(0,0,0,1);
+    text-decoration: none;
+}
+
+.hr-line {
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-op-2);
+}
+
+footer img{
+    margin-top: 20px;
 }
 
 /* -------------------------------------------Media Query */
