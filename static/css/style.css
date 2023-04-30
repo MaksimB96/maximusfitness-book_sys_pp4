@@ -29,9 +29,6 @@
     width: 50px;
 }
 
-.link-style{
-    color: var(--brand3);
-}
 
 .nav-item::after {
     content: '';
@@ -50,6 +47,9 @@
 
 /* -------------------------------------------Footer */
 
+footer{
+    background: var(--bg-op-1);
+}
 
 /* -------------------------------------------Media Query */
 
