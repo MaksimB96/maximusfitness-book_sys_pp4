@@ -12,6 +12,7 @@
 
 .font-head {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 .font-body {
@@ -19,7 +20,7 @@
 }
 
 /* -------------------------------------------Navbar */
-.navbar-styles{
+.navbar-styles {
     background: var(--brand2);
 }
 
@@ -28,13 +29,32 @@
     width: 50px;
 }
 
-.navbar-nav li a{
-    text-decoration: none;
+.link-style{
     color: var(--brand3);
 }
 
-.navbar-dark .navbar-toggler-icon{
-    color: var(--brand3);
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--brand1);
+    transition: 0.4s;
 }
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+
 
 /* -------------------------------------------Footer */
+
+
+/* -------------------------------------------Media Query */
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        align-items: center;
+    }
+}
