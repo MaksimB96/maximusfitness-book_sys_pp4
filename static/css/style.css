@@ -19,23 +19,18 @@
 }
 
 /* -------------------------------------------Navbar */
-
-.navbar {
-    background-color: var(--brand2);
+.navbar-styles{
+    background: var(--brand2);
 }
 
-.navbar-brand>img {
+.navbar img {
     height: 50px;
     width: 50px;
-    margin-left: 20px;
 }
 
-.nav-link{
-    color: #ffffff !important;
+.navbar-nav li a{
+    text-decoration: none;
+    color: var(--brand3);
 }
 
 /* -------------------------------------------Footer */
-
-footer img {
-    margin-left: 20px;
-}
