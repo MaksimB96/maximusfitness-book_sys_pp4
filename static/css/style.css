@@ -60,6 +60,11 @@
     margin-right: 200px;
 }
 
+.btn-outline-danger {
+    color: var(--brand3) !important;
+}
+
+
 /* -------------------------------------------Footer */
 
 footer {
