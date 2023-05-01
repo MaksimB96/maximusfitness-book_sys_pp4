@@ -110,4 +110,14 @@ footer img{
     .navbar-nav {
         align-items: center;
     }
+
+    .jumbotron h1{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .jumbotron .lead{
+        font-size: 15px;
+        text-align: center;
+    }
 }
