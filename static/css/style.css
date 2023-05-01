@@ -45,6 +45,8 @@
 
 /* -------------------------------------------Index */
 
+/* -----------Jumbotron */
+
 .jumbotron {
     background: rgba(0,0,0,0.7)url('../img/mf-banner.png');
     background-blend-mode: darken;
@@ -64,6 +66,22 @@
 
 .btn-outline-danger {
     color: var(--brand3) !important;
+}
+
+/* -----------About */
+
+#about-section .left-slide-text{
+    margin-top: 50px;
+}
+
+
+
+.barbell-img{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
 }
 
 

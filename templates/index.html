@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <section>
     <div class="jumbotron jumbotron-fluid">
@@ -22,8 +22,8 @@
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
-                <div class="left-slide">
-            
+                <div class="right-slide-img">
+                    <img src="{% static 'img/barbell-dl.jpg' %}" alt="barbell-deadlift" class="barbell-img">
                 </div>
             </div>
         </div>
