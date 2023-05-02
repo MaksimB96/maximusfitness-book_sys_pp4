@@ -48,7 +48,7 @@
 /* -----------Jumbotron */
 
 .jumbotron {
-    background: rgba(0,0,0,0.7)url('../img/mf-banner.png');
+    background: rgba(0, 0, 0, 0.7)url('../img/mf-banner.png');
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,17 +70,17 @@
 
 /* -----------About */
 
-#about-section{
+#about-section {
     margin-bottom: 20px;
 }
 
-#about-section .left-slide-text{
+#about-section .left-slide-text {
     margin-top: 50px;
 }
 
 
 
-.barbell-img{
+.barbell-img {
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -90,7 +90,7 @@
 
 /* -----------Iframe Map */
 
-.responsive-map{
+.responsive-map {
     height: 100%;
     width: 100%;
     border-radius: 20px;
@@ -99,18 +99,18 @@
 
 /* -----------Testimonial */
 
-.client-h2{
+.client-h2 {
     margin-top: 50px;
 }
 
-#slider{
+#slider {
     padding: 50px 20px 35px 20px;
     background: var(--brand1);
     text-align: center;
     box-shadow: 2px 2px 5px black;
 }
 
-.testimonial .desc{
+.testimonial .description {
     font-size: 14px;
     color: var(--brand3);
     line-height: 26px;
@@ -118,7 +118,7 @@
     position: relative;
 }
 
-.testimonial .desc::before{
+.testimonial .description::before {
     content: "\f10d";
     font-family: 'Source Sans Pro', sans-serif;
     position: absolute;
@@ -129,18 +129,22 @@
 .testimonial .title {
     font-size: 24px;
     font-weight: bold;
-    color: var(--brand3);
+    color: black;
     margin: 0;
     text-transform: capitalize;
 }
 
-.testimonial .post{
+.testimonial .post {
     display: block;
     font-size: 15px;
     color: var(--brand3);
 }
 
-.owl-buttons{
+.owl-carousel {
+    display: contents !important;
+}
+
+.owl-buttons {
     width: 100%;
     height: 40px;
     position: absolute;
@@ -149,18 +153,75 @@
 }
 
 .owl-prev,
-.owl-next{
+.owl-next {
     position: absolute;
     left: 0;
     transition: all 0.4s ease-in-out 0s;
 }
 
-.owl-next{
+.owl-next {
     left: auto;
     right: 0;
 }
 
+.owl-buttons .owl-prev:before,
+.owl-buttons .owl-next:before {
+    content: "\f104";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 60px;
+    font-weight: 900;
+    color: #cacaca;
+    line-height: 20px;
+    opacity: 0.8;
+}
 
+.owl-buttons .owl-next:before {
+    content: "\f105";
+}
+
+.owl-buttons .owl-prev:hover:before,
+.owl-buttons .owl-next:hover:before {
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+    background: transparent;
+}
+
+.owl-theme .owl-controls {
+    margin-top: 40px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #ccc;
+    background: url("../images/user.jpg") no-repeat;
+    background-size: cover;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.owl-theme .owl-controls .owl-page:nth-child(2) span {
+    background: url("../images/user.jpg") no-repeat;
+    background-size: cover;
+}
+
+.owl-theme .owl-controls .owl-page:nth-child(3) span {
+    background: url("../images/user.jpg") no-repeat;
+    background-size: cover;
+}
+
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    opacity: 0.5;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page.active:hover span {
+    border-color: var(--brand1);
+    opacity: 1;
+}
 
 /* -------------------------------------------Footer */
 
@@ -236,5 +297,11 @@ footer img {
         font-size: 15px;
         text-align: center;
         margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .owl-buttons {
+        bottom: 30%;
     }
 }
