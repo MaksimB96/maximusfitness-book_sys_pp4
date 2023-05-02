@@ -1,6 +1,5 @@
+// const ScrollReveal = require('scrollreveal');
 
-const ScrollReveal = require('scrollreveal');
+// ScrollReveal().reveal('.left-slide-text');
 
-ScrollReveal().reveal('.left-slide-text');
-
-ScrollReveal().reveal('.right-slide-img');
+// ScrollReveal().reveal('.right-slide-img');
