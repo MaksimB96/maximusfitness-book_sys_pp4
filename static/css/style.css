@@ -70,6 +70,10 @@
 
 /* -----------About */
 
+#about-section{
+    margin-bottom: 20px;
+}
+
 #about-section .left-slide-text{
     margin-top: 50px;
 }
