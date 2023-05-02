@@ -97,6 +97,71 @@
     box-shadow: 2px 2px 5px black;
 }
 
+/* -----------Testimonial */
+
+.client-h2{
+    margin-top: 50px;
+}
+
+#slider{
+    padding: 50px 20px 35px 20px;
+    background: var(--brand1);
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+}
+
+.testimonial .desc{
+    font-size: 14px;
+    color: var(--brand3);
+    line-height: 26px;
+    text-indent: 30px;
+    position: relative;
+}
+
+.testimonial .desc::before{
+    content: "\f10d";
+    font-family: 'Source Sans Pro', sans-serif;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.testimonial .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--brand3);
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: var(--brand3);
+}
+
+.owl-buttons{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 40%;
+    left: 0;
+}
+
+.owl-prev,
+.owl-next{
+    position: absolute;
+    left: 0;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.owl-next{
+    left: auto;
+    right: 0;
+}
+
+
+
 /* -------------------------------------------Footer */
 
 footer {
