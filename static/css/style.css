@@ -101,10 +101,31 @@
 
 /* -----------Testimonial */
 
-.client-h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+.tester_new {
+    padding: 20px 0 100px;
 }
+
+.tester_new hr {
+    width: 100px;
+}
+
+.tester_new .carousel-item p {
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: var(--brand2);
+}
+
+.tester_new .carousel-item hr {
+    width: 100px;
+}
+
+.tester_new .carousel-item h5 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+
 
 /* -------------------------------------------Footer */
 
