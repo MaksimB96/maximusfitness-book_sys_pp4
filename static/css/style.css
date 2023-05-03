@@ -124,7 +124,35 @@
     margin-bottom: 0;
 }
 
+.tester_new .carousel-indicators li {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-image: url('../img/person1.jpg');
+    background-position: center;
+    background-size: cover;
+    border: 5px solid var(--brand1);
+    opacity: 0.4;
+    box-shadow: 0px 0px 5px 1px black;
+    margin: 0 10px;
+    cursor: pointer;
+}
 
+.tester_new .carousel-indicators li:nth-child(2) {
+    background-image: url('../img/person1.jpg');
+}
+
+.tester_new .carousel-indicators li:nth-child(3) {
+    background-image: url('../img/person1.jpg');
+}
+
+.carousel-indicators {
+    bottom: -100px !important;
+}
+
+.tester_new .carousel-indicators .active {
+    opacity: 1;
+}
 
 
 /* -------------------------------------------Footer */

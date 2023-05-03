@@ -26,3 +26,10 @@ ScrollReveal().reveal('.right-slide-text', {
     origin: 'right',
     distance: '300px'
 });
+
+ScrollReveal().reveal('.tester_new', {
+    duration: 2000,
+    origin: 'left',
+    distance: '300px',
+    delay: 2000
+});
