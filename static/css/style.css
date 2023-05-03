@@ -103,12 +103,7 @@
 
 .client-h2 {
     margin-top: 50px;
-}
-
-.client-h2::after {
-    content: '';
-    width: 40%;
-    background-color: var(--brand1);
+    margin-bottom: 50px;
 }
 
 /* -------------------------------------------Footer */
