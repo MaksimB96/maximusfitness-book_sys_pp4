@@ -156,6 +156,11 @@
     opacity: 1;
 }
 
+/* -----------Contact */
+
+#contact-section {
+    background: var(--bg-op-2);
+}
 
 /* -------------------------------------------Footer */
 
