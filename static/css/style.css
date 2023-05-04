@@ -74,10 +74,7 @@
     margin-bottom: 20px;
 }
 
-#about-section .left-slide-text {
-    margin-top: 50px;
-}
-
+#about-section .left-slide-text,
 #about-section .right-slide-text {
     margin-top: 50px;
 }
@@ -90,11 +87,16 @@
     box-shadow: 2px 2px 5px black;
 }
 
-/* -----------Iframe Map */
+.margin-adjust {
+    margin-bottom: 30px;
+}
 
-.responsive-map {
+/* -----------Location */
+
+.location-img {
     height: 100%;
     width: 100%;
+    overflow: hidden;
     border-radius: 20px;
     box-shadow: 2px 2px 5px black;
 }
@@ -229,6 +231,10 @@ footer img {
         font-size: 15px;
         text-align: center;
         margin-right: 0;
+    }
+
+    .jumbotron button {
+        text-align: center !important;
     }
 }
 

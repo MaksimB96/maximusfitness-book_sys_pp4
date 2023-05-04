@@ -1,3 +1,5 @@
+// Functions to add scroll effects to site
+
 ScrollReveal().reveal('.navbar-brand', {
     duration: 2000,
     origin: 'bottom'
@@ -15,7 +17,7 @@ ScrollReveal().reveal('.right-slide-img', {
     distance: '300px'
 });
 
-ScrollReveal().reveal('.responsive-map', {
+ScrollReveal().reveal('.location', {
     duration: 2000,
     origin: 'left',
     distance: '300px'
@@ -31,5 +33,7 @@ ScrollReveal().reveal('.tester_new', {
     duration: 2000,
     origin: 'left',
     distance: '300px',
-    delay: 2000
+    delay: 1000
 });
+
+
