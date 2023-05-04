@@ -238,8 +238,12 @@ footer img {
         margin-right: 0;
     }
 
-    .jumbotron button {
-        text-align: center !important;
+    .location {
+        display: none;
+    }
+
+    .right-slide-img {
+        display: none;
     }
 }
 
