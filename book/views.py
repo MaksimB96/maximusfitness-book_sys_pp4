@@ -5,3 +5,7 @@ from django.views.generic.base import TemplateView
 
 class HomeTemplate(TemplateView):
     template_name = "index.html"
+
+
+class BookTemplate(TemplateView):
+    template_name = "book-session.html"
