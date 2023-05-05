@@ -69,8 +69,13 @@
     border-radius: 20px !important;
 }
 
-.btn-outline-danger {
-    color: var(--brand3) !important;
+.btn-outline-danger a {
+    color: var(--brand3);
+}
+
+.btn-outline-danger a:hover {
+    text-decoration: none !important;
+    color: var(--brand3);
 }
 
 /* -----------About */
