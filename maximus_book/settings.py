@@ -157,7 +157,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Email sending functionality
 if 'DEVELOPMENT' in os.environ:
-    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    print("emailing locally")
+    print("emailing locally")
+    print("emailing locally")
+    print("emailing locally")
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'maximusfitness@example.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
