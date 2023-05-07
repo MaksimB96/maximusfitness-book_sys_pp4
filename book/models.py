@@ -18,11 +18,12 @@ SLOT = {
 
 
 class SessionBook(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, null=True, blank=True)
     email = models.EmailField()
     phone = models.CharField(max_length=15)
     booked_slot = models.CharField(max_length=10, choices=SLOT, default='8 AM')
-    client_notes = models.TextField(blank=True) 
+    client_notes = models.TextField(blank=True)
     sent_on = models.DateField(default=datetime.now)
     confirmed = models.BooleanField(default=False)
 
@@ -31,3 +32,9 @@ class SessionBook(models.Model):
 
     def __str__(self):
         return self.user
+
+
+class ContactUs(models.Model):
+    name = models.CharField(max_length=20)
+    email = models.EmailField()
+    contact_message = models.TextField(blank=True)

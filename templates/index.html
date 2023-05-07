@@ -119,6 +119,7 @@
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form">
                     <form>
+                        {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
                                 placeholder="Enter your name">
