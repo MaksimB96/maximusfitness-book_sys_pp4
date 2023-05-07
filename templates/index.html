@@ -126,22 +126,22 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form>
+                    <form role="form" name="index-form" method="POST" action="{% url 'home' %}">
                         {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
-                                placeholder="Enter your name">
+                                placeholder="Enter your name" name="name">
                         </div>
                         <div class="con-email form-group">
-                            <input type="email" class="form-control font-body" placeholder="Enter email">
+                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email">
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                                 else.</small>
                         </div>
                         <div class="con-text form-group">
-                            <textarea class="form-control font-body" cols="30" rows="10"
+                            <textarea class="form-control font-body" name="contact-text" cols="30" rows="10"
                                 placeholder="Enter your message"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-outline-danger con-submit">Submit</button>
+                        <button type="submit" class="btn btn-outline-danger con-submit" id="submit">Submit</button>
                     </form>
                 </div>
             </div>
