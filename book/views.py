@@ -13,10 +13,8 @@ class HomeTemplate(TemplateView):
         message = request.POST.get("contact_message")
 
         email = EmailMessage(
-            subject= f"{name}"
+            subject=f"{name} wishes to get in contact with you!"
         )
-
-
 
 
 class BookTemplate(TemplateView):
