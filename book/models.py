@@ -33,8 +33,3 @@ class SessionBook(models.Model):
     def __str__(self):
         return self.user
 
-
-class ContactUs(models.Model):
-    name = models.CharField(max_length=20)
-    email = models.EmailField()
-    contact_message = models.TextField(blank=True)

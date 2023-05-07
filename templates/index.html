@@ -130,16 +130,16 @@
                         {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
-                                placeholder="Enter your name" name="name">
+                                placeholder="Enter your name" name="name" required>
                         </div>
                         <div class="con-email form-group">
-                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email">
+                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email" required>
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                                 else.</small>
                         </div>
                         <div class="con-text form-group">
                             <textarea class="form-control font-body" name="contact-text" cols="30" rows="10"
-                                placeholder="Enter your message"></textarea>
+                                placeholder="Enter your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-danger con-submit" id="submit">Submit</button>
                     </form>
