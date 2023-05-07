@@ -207,6 +207,15 @@
     border-radius: 20px;
 }
 
+/* -------------------------------------------Sign-Up */
+.sign-up-cont {
+    height: 100vh;
+}
+
+.sign-up-col {
+    padding-top: 100px;
+}
+
 /* -------------------------------------------Footer */
 
 footer {
