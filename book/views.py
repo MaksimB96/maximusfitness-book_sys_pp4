@@ -1,8 +1,10 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
+from django.contrib import messages
+from django.http import HttpResponseRedirect, Http404
 from django.views.generic.base import TemplateView
 from django.core.mail import send_mail
 from django.conf import settings
+from .forms import CreateBooking
 
 
 class HomeTemplate(TemplateView):
@@ -17,12 +19,13 @@ class HomeTemplate(TemplateView):
         send_mail(
             subject,
             body,
-            email,  
+            email,
             [settings.DEFAULT_FROM_EMAIL],
             [email],
         )
-        return HttpResponse('home')
+        return HttpResponseRedirect('home')
 
 
 class BookTemplate(TemplateView):
     template_name = "book-session.html"
+

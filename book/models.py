@@ -2,6 +2,7 @@
 
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models import IntegerField
 from django.core.validators import MaxValueValidator, MinValueValidator
 from datetime import datetime
 
@@ -19,6 +20,9 @@ SLOT = {
 
 
 class SessionBook(models.Model):
+    """
+    Model For booking a one on one session
+    """
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
     fname = models.CharField(max_length=15, blank=True)
@@ -34,6 +38,7 @@ class SessionBook(models.Model):
     )
     email = models.EmailField()
     phone = models.CharField(max_length=15)
+    date_booked = models.DateField(null=True)
     booked_slot = models.CharField(max_length=10, choices=SLOT, default='8 AM')
     client_notes = models.TextField(blank=True)
     sent_on = models.DateField(default=datetime.now)
@@ -44,4 +49,4 @@ class SessionBook(models.Model):
         ordering = ['-sent_on']
 
     def __str__(self):
-        return self.user
+        return str(self.id)
