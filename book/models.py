@@ -25,9 +25,10 @@ class SessionBook(models.Model):
     """
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
-    fname = models.CharField(max_length=15, blank=True)
-    lname = models.CharField(max_length=15, blank=True)
+    fname = models.CharField("First Name", max_length=15, blank=True)
+    lname = models.CharField("Last Name", max_length=15, blank=True)
     age = models.IntegerField(
+        "Age",
         null=False,
         blank=False,
         default=18,
@@ -36,11 +37,12 @@ class SessionBook(models.Model):
             MaxValueValidator(80)
         ]
     )
-    email = models.EmailField()
-    phone = models.CharField(max_length=15)
+    email = models.EmailField("E-Mail", )
+    phone = models.CharField("Phone No.", max_length=15)
     date_booked = models.DateField(null=True)
-    booked_slot = models.CharField(max_length=10, choices=SLOT, default='8 AM')
-    client_notes = models.TextField(blank=True)
+    booked_slot = models.CharField(
+        "Pick a Slot", max_length=10, choices=SLOT, default='8 AM')
+    client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
     confirmed = models.BooleanField(default=False)
@@ -49,4 +51,4 @@ class SessionBook(models.Model):
         ordering = ['-sent_on']
 
     def __str__(self):
-        return str(self.id)
+        return str(self.fname)

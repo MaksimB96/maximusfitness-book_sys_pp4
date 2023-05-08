@@ -39,7 +39,7 @@
             <ul class="navbar-nav ml-auto">
                 {% if user.is_authenticated %}
                 <li class="nav-item">
-                    <a href="{% url 'account_logout' %}" class="nav-link link-style mr-2">Your Sessions <i
+                    <a href="{% url 'manage-session' %}" class="nav-link link-style mr-2">Your Sessions <i
                             class="fa-solid fa-user"></i></a>
                 </li>
                 <li class="nav-item">
@@ -70,7 +70,7 @@
                 {% for message in messages%}
                 <div class="alert {{ message.tags }} alert-dismissable fade show" id="msg" role="alert">
                     {{ message | safe }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
                 {% endfor %}
             </div>
