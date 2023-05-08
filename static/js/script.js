@@ -75,3 +75,12 @@ ScrollReveal().reveal('.map-area', {
     distance: '300px',
 });
 
+/**
+ * Timeout finction dismisses alert
+ */
+
+setTimeout(function () {
+    let messages = document.getElementById("msg");
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+}, 3000);
