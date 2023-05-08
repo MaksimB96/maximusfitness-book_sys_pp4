@@ -7,10 +7,18 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
             <h1 class="display-2 font-head">Results one session at a time!</h1>
+            {% if user.is_authenticated %}
+            <p class="lead font-body">Welcome to the maximus fitness booking system! You can manage your bookings in
+                "Your
+                Sessions" or book a new session in "Book a Session"! </p>
+            <button class="btn btn-outline-danger"><a href="{% url 'book-session' %}">Book Now</a></button>
+            <button class="btn btn-outline-danger"><a href="{% url 'account_signup' %}">Manage</a></button>
+            {% else %}
             <p class="lead font-body">Welcome to the maximus fitness booking system! Please login to book a session. If
                 you are new please sign up to get started on your fitness journey! </p>
             <button class="btn btn-outline-danger"><a href="{% url 'account_login' %}">Login</a></button>
             <button class="btn btn-outline-danger"><a href="{% url 'account_signup' %}">Sign Up</a></button>
+            {% endif %}
         </div>
     </div>
 </section>
@@ -133,7 +141,8 @@
                                 placeholder="Enter your name" name="name" required>
                         </div>
                         <div class="con-email form-group">
-                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email" required>
+                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email"
+                                required>
                             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                                 else.</small>
                         </div>
