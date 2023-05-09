@@ -45,4 +45,7 @@ class BookTemplate(generic.CreateView):
 
 def get_session(request):
     item = SessionBook.objects.all()
-    return render(request, 'templates/manage-session.html')
+    context = {
+        'item':item
+    }
+    return render(request, 'templates/manage-session.html', context)
