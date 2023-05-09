@@ -43,5 +43,6 @@ class BookTemplate(generic.CreateView):
     success_url = "/manage-session"
 
 
-class ManageTemplate(generic.ListView):
-    template_name = "manage-session.html"
+def get_session(request):
+    item = SessionBook.objects.all()
+    return render(request, 'templates/manage-session.html')
