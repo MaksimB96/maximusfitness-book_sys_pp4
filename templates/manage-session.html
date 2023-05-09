@@ -1,9 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
-<div class="header">
-    <h1 class="font-head mt-5">
+<div class="header text-center">
+    <h1 class=" font-head mt-5">
         Your Sessions
     </h1>
     <p class="font-body mt-5">Manage your sessions here</p>
+</div>
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Booking</h5>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <i class="fa-solid fa-user"></i> name
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-clock"></i> time
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-calendar-check"></i> Date
+            </li>
+            <li class="list-group-item">
+                <i class="fa-solid fa-circle-check"></i> Confirmed
+            </li>
+        </ul>
+    </div>
+    <div class="card-footer">
+        <button class="btn">Update</button>
+        <button class="btn">Delete</button>
+    </div>
 </div>
 {% end block % }
