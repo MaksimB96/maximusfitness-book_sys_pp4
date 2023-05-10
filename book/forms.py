@@ -3,15 +3,30 @@ from django.forms import ModelForm
 from django import forms
 
 
+class DateInput(forms.DateInput):
+    input_type = 'date'
+
+
+class TimeInput(forms.TimeInput):
+    input_type = 'text'
+
+
 class CreateBooking(forms.ModelForm):
     class Meta:
         model = SessionBook
-        fields = ('fname', 'lname', 'age', 'email',
-                  'phone', 'date', 'client_notes',)
-        date = forms.DateField(
-            input_formats=['%d/%m/%Y'],
-            widget=forms.DateTimeInput(attrs={
-                'class': 'form-control datetimepicker-input',
-                'data-target': '#datetimepicker1'
-            })
-        )
+        fields = ('fname', 'lname', 'age', 'date', 'time', 'client_notes',)
+        widgets = {
+            'date': forms.DateInput(
+                format=('%Y-%m-%d'),
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'Please Select a Date',
+                    'type': 'date'
+                }
+            ),
+            'time': forms.TimeInput(
+                attrs={
+                    'type': 'time'
+                }
+            ),
+        }

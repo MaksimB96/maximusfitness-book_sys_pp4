@@ -40,7 +40,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    booked_slot = models.CharField(
+    time = models.CharField(
         "Pick a Slot", max_length=10, choices=SLOT, default='8 AM')
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
