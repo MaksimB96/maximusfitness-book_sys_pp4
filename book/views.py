@@ -1,10 +1,11 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.http import HttpResponse, Http404
 from django.views import generic, View
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import SessionBook
+from .forms import CreateBooking
 
 
 class HomeTemplate(generic.TemplateView):
@@ -30,17 +31,17 @@ class HomeTemplate(generic.TemplateView):
         return HttpResponse('home')
 
 
-class BookTemplate(generic.CreateView):
-    """
-    Creates view to handle rendering booking form
-    """
-    template_name = "book-session.html"
-    model = SessionBook
-
-    fields = ['fname', 'lname', 'age', 'email',
-              'phone', 'booked_slot', 'client_notes']
-
-    success_url = "/manage-session"
+def book_session(request):
+    if request.method == 'POST':
+        form = CreateBooking(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('manage-session')
+    form = CreateBooking()
+    context = {
+        'form': form
+    }
+    return render(request, 'book-session.html', context)
 
 
 def get_session(request):
@@ -48,4 +49,5 @@ def get_session(request):
     context = {
         'item': item
     }
+    paginate_by = 3
     return render(request, 'manage-session.html', context)

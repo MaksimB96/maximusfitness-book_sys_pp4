@@ -7,4 +7,11 @@ class CreateBooking(forms.ModelForm):
     class Meta:
         model = SessionBook
         fields = ('fname', 'lname', 'age', 'email',
-                  'phone', 'date_booked', 'client_notes',)
+                  'phone', 'date', 'client_notes',)
+        date = forms.DateField(
+            input_formats=['%d/%m/%Y'],
+            widget=forms.DateTimeInput(attrs={
+                'class': 'form-control datetimepicker-input',
+                'data-target': '#datetimepicker1'
+            })
+        )

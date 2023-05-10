@@ -39,7 +39,7 @@ class SessionBook(models.Model):
     )
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
-    date_booked = models.DateField(null=True)
+    date = models.DateField("Pick a Date", default=datetime.now)
     booked_slot = models.CharField(
         "Pick a Slot", max_length=10, choices=SLOT, default='8 AM')
     client_notes = models.TextField("Leave Your Request Here", blank=True)
@@ -51,4 +51,4 @@ class SessionBook(models.Model):
         ordering = ['-sent_on']
 
     def __str__(self):
-        return str(self.fname)
+        return self.fname
