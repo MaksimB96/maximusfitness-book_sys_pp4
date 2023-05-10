@@ -6,6 +6,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from .models import SessionBook
 from .forms import CreateBooking
+from django.contrib.auth.decorators import login_required
 
 
 class HomeTemplate(generic.TemplateView):
@@ -31,6 +32,7 @@ class HomeTemplate(generic.TemplateView):
         return HttpResponse('home')
 
 
+@login_required
 def book_session(request):
     if request.method == 'POST':
         form = CreateBooking(request.POST)
@@ -44,6 +46,7 @@ def book_session(request):
     return render(request, 'book-session.html', context)
 
 
+@login_required
 def get_session(request):
     item = SessionBook.objects.all()
     context = {

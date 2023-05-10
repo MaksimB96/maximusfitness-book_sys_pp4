@@ -7,22 +7,11 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 from datetime import datetime
 
 
-# Time slots for booking
-SLOT = {
-    ("8 AM", "8 AM"),
-    ("10 AM", "10 AM"),
-    ("12 PM", "12 PM"),
-    ("2 PM", "2 PM"),
-    ("4 PM", "4 PM"),
-    ("6 PM", "6 PM"),
-    ("8 PM", "8 PM"),
-}
-
-
 class SessionBook(models.Model):
     """
     Model For booking a one on one session
     """
+
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
     fname = models.CharField("First Name", max_length=15, blank=True)
@@ -40,8 +29,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    time = models.CharField(
-        "Pick a Slot", max_length=10, choices=SLOT, default='8 AM')
+    time = models.CharField("Pick a Slot", max_length=20)
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
@@ -51,4 +39,4 @@ class SessionBook(models.Model):
         ordering = ['-sent_on']
 
     def __str__(self):
-        return self.fname
+        return str(self.id)
