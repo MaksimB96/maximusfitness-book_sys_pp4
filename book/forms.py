@@ -30,3 +30,24 @@ class CreateBooking(forms.ModelForm):
                 }
             ),
         }
+
+
+class UpdateBooking(forms.ModelForm):
+    class Meta:
+        model = SessionBook
+        fields = ('date', 'time',)
+        widgets = {
+            'date': forms.DateInput(
+                format=('%Y-%m-%d'),
+                attrs={
+                    'class': 'form-control',
+                    'placeholder': 'Please Select a Date',
+                    'type': 'date'
+                }
+            ),
+            'time': forms.TimeInput(
+                attrs={
+                    'type': 'time'
+                }
+            ),
+        }
