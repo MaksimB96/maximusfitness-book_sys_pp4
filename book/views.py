@@ -74,9 +74,9 @@ def update_session(request, id):
         if form.is_valid():
             form.save()
             return redirect('manage-session')
-        else:
-            form = UpdateBooking()
-            context = {
-                'form': form,
-            }
-        return render(request, 'update-session.html', context)
+    else:
+        form = UpdateBooking()
+    context = {
+        'form': form,
+    }
+    return render(request, 'update-session.html', context)
