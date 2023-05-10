@@ -52,5 +52,21 @@ def get_session(request):
     context = {
         'item': item
     }
-    paginate_by = 3
     return render(request, 'manage-session.html', context)
+
+
+@login_required
+def update_session(request, id):
+    if request.method == 'POST':
+        session = get_object_or_404(CreateBooking, pk=id, user=request.user)
+        form = UpdateBooking(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('manage-session')
+        else:
+            form = UpdateBooking()
+            context = {
+                'form': form,
+            }
+        return render(request, 'update-session.html', context)
+
