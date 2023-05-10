@@ -6,7 +6,38 @@
     <p class="font-body">Manage your sessions here</p>
 </div>
 {% for item in items %}
-3
+<div class="py-5">
+    <div class="container">
+        <div class="row hidden-md-up">
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-block">
+                        <h4 class="card-title font-head">
+                            <i class="fa-duotone fa-dumbbell"
+                                style="--fa-primary-color: #000000; --fa-secondary-color: #c60101; --fa-secondary-opacity: 1;"></i>
+                            {{ item.fname }}
+                        </h4>
+                        <p class="card-text font-body">
+                            <i class="fa-solid fa-calendar"></i> {{ item.date }}
+                        </p>
+                        <p class="font-body">
+                            <i class="fa-solid fa-clock"></i> {{ item.time }}
+                        </p>
+                        {% if item.confirmed = False %}
+                        <p class="font-body">
+                            Confirmed Status : <i class="fa-solid fa-circle-xmark" style="color: #f00000;"></i>
+                        </p>
+                        {% else %}
+                        <p class="font-body">
+                            Confirmed Status : <i class="fa-solid fa-circle-check" style="color: #34c200;"></i>
+                        </p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% empty %}
 <div class="container manage-cont">
     <div class="row">
