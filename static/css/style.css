@@ -211,14 +211,14 @@
 
 /* -------------------------------------------Your Session */
 
-/* -----------Booking Cards */
-
-.card-title {
-    text-align: center;
+.manage-cont {
+    height: 100vh;
+    padding-top: 10%;
 }
 
-.card-text {
-    text-align: justify;
+.manage-cont .row h2 {
+    font-size: 40px;
+    text-shadow: 2px 2px 6px #000000;
 }
 
 /* -------------------------------------------Sign-Up */

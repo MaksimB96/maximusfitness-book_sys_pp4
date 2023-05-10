@@ -1,41 +1,20 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
+<div class="container"></div>
 <div class="header text-center">
-  <h1 class="font-head mt-5">Your Sessions</h1>
-  <p class="font-body">Manage your sessions here</p>
+    <h1 class="font-head mt-5">Your Sessions</h1>
+    <p class="font-body">Manage your sessions here</p>
 </div>
-{% for items in item %}
-<div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Booking</h5>
-    <ul class="list-group">
-      <li class="list-group-item">
-        <i class="fa-solid fa-user"></i> {{ items.fname }}
-      </li>
-      <li class="list-group-item">
-        <i class="fa-solid fa-clock"></i> {{ items.booked_slot}}
-      </li>
-      <li class="list-group-item">
-        <i class="fa-solid fa-calendar-check"></i> {{ items.date_booked}}
-      </li>
-      <li class="list-group-item">
-        <i class="fa-solid fa-circle-check"></i> {{ items.confirmed }}
-      </li>
-    </ul>
-    <div class="card-footer">
-      <button id="left-update" class="btn">Update</button>
-      <button id="right-delete" class="btn">Delete</button>
-    </div>
-    {% empty %}
-    <div class="container">
-      <div class="row">
+{% for item in items %}
+3
+{% empty %}
+<div class="container manage-cont">
+    <div class="row">
         <div class="col-md-12 text-center mt-5 mb-5">
-          <h2 class="font-head">You Currently Have no booked slots!</h2>
-          <p class="font-body">Please go to the "Book A Session"</p>
+            <h2 class="font-head">You Currently Have no booked slots!</h2>
+            <p class="font-body text-muted">Please go to the "Book A Session"</p>
         </div>
-      </div>
     </div>
-    {% endfor %}
-  </div>
 </div>
-
+{% endfor %}
 {% endblock %}

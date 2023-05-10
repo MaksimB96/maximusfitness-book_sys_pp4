@@ -35,12 +35,16 @@ class HomeTemplate(generic.TemplateView):
 
 @login_required
 def get_session(request):
+    """
+    Gets User bookings
+    """
     user = request.user
     items = SessionBook.objects.filter(user=user)
-    return render(request, 'manage-booking.html', {
+    return render(request, 'manage-session.html', {
         'user': user,
         'items': items,
     })
+
 
 @login_required
 def book_session(request):
