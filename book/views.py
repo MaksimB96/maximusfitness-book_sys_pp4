@@ -34,6 +34,23 @@ class HomeTemplate(generic.TemplateView):
 
 
 @login_required
+def book_session(request):
+    """
+    Allows User to book a session via form from forms.py
+    """
+    if request.method == 'POST':
+        booking = SessionBook(user=request.user)
+        form = CreateBooking(request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('manage-session')
+    else:
+        form = CreateBooking()
+    return render(request, 'book-session.html', {
+        'form': form})
+
+
+@login_required
 def get_session(request):
     """
     Gets User bookings
@@ -47,37 +64,10 @@ def get_session(request):
 
 
 @login_required
-def book_session(request):
-    """
-    Allows User to book a session via form from forms.py
-    """
-    if request.method == 'POST':
-        booking = SessionBook(user=request.user)
-        form = CreateBooking(request.POST, instance=booking)
-        if form.is_valid():
-            users_time = request.POST.get('time')
-            users_date = request.POST.get('date')
-            form.save()
-            messages.add_message(
-                request, messages.SUCCESS,
-                "Booking Succesfully Created for:"
-                f"{users_time} on {users_date}"
-            )
-            return redirect('manage-booking')
-        else:
-            messages.add_message(
-                request, messages.ERROR,
-                "test Error"
-            )
-            url = reverse('account_login')
-            return HttpResponseRedirect(url)
-    else:
-        form = CreateBooking()
-    return render(request, 'book-session.html', {'form': form})
-
-
-@login_required
 def update_session(request, id):
+    """
+    Provides Functionality for Updating existing booking
+    """
     if request.method == 'POST':
         session = get_object_or_404(CreateBooking, pk=id, user=request.user)
         form = UpdateBooking(request.POST, instance=session)

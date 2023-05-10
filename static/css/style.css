@@ -1,7 +1,7 @@
 /* -------------------------------------------Root Colors/ set fonts */
 
 :root {
-    --brand1: #F81517;
+    --brand1: #f81517;
     --brand2: #000000;
     --brand3: #ffffff;
     --bg-op-1: #dfe0e1;
@@ -11,12 +11,12 @@
 /* -------------------------------------------Fonts */
 
 .font-head {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 200;
 }
 
 .font-body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 /* -------------------------------------------Navbar */
@@ -29,9 +29,8 @@
     width: 50px;
 }
 
-
 .nav-item::after {
-    content: '';
+    content: "";
     display: block;
     width: 0px;
     height: 2px;
@@ -48,7 +47,7 @@
 /* -----------Jumbotron */
 
 .jumbotron {
-    background: rgba(0, 0, 0, 0.7)url('../img/mf-banner.png');
+    background: rgba(0, 0, 0, 0.7) url("../img/mf-banner.png");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +64,8 @@
 }
 
 .btn-danger,
-.btn-outline-danger {
+.btn-outline-danger,
+.btn-success {
     border-radius: 20px !important;
 }
 
@@ -140,7 +140,7 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-image: url('../img/person1.jpg');
+    background-image: url("../img/person1.jpg");
     background-position: center;
     background-size: cover;
     border: 5px solid var(--brand1);
@@ -151,11 +151,11 @@
 }
 
 .tester_new .carousel-indicators li:nth-child(2) {
-    background-image: url('../img/person1.jpg');
+    background-image: url("../img/person1.jpg");
 }
 
 .tester_new .carousel-indicators li:nth-child(3) {
-    background-image: url('../img/person1.jpg');
+    background-image: url("../img/person1.jpg");
 }
 
 .carousel-indicators {
@@ -198,7 +198,6 @@
     width: 100%;
     border-radius: 20px;
 }
-
 
 .map-area iframe {
     width: 100%;
@@ -310,8 +309,6 @@ footer img {
         text-align: center;
         margin-right: 0;
     }
-
-
 }
 
 @media only screen and (max-width: 479px) {
