@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
-from django.http import HttpResponse, Http404
+from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.views import generic, View
 from django.core.mail import send_mail
 from django.conf import settings
+from django.urls import reverse
 from .models import SessionBook
 from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
@@ -33,33 +34,49 @@ class HomeTemplate(generic.TemplateView):
 
 
 @login_required
-def book_session(request):
-    if request.method == 'POST':
-        form = CreateBooking(request.POST)
-        if form.is_valid():
-            form.save()
-            return redirect('manage-session')
-    form = CreateBooking()
-    context = {
-        'form': form
-    }
-    return render(request, 'book-session.html', context)
-
+def get_session(request):
+    user = request.user
+    items = SessionBook.objects.filter(user=user)
+    return render(request, 'manage-booking.html', {
+        'user': user,
+        'items': items,
+    })
 
 @login_required
-def get_session(request):
-    item = SessionBook.objects.all()
-    context = {
-        'item': item
-    }
-    return render(request, 'manage-session.html', context)
+def book_session(request):
+    """
+    Allows User to book a session via form from forms.py
+    """
+    if request.method == 'POST':
+        booking = SessionBook(user=request.user)
+        form = CreateBooking(request.POST, instance=booking)
+        if form.is_valid():
+            users_time = request.POST.get('time')
+            users_date = request.POST.get('date')
+            form.save()
+            messages.add_message(
+                request, messages.SUCCESS,
+                "Booking Succesfully Created for:"
+                f"{users_time} on {users_date}"
+            )
+            return redirect('manage-booking')
+        else:
+            messages.add_message(
+                request, messages.ERROR,
+                "test Error"
+            )
+            url = reverse('account_login')
+            return HttpResponseRedirect(url)
+    else:
+        form = CreateBooking()
+    return render(request, 'book-session.html', {'form': form})
 
 
 @login_required
 def update_session(request, id):
     if request.method == 'POST':
         session = get_object_or_404(CreateBooking, pk=id, user=request.user)
-        form = UpdateBooking(request.POST)
+        form = UpdateBooking(request.POST, instance=session)
         if form.is_valid():
             form.save()
             return redirect('manage-session')
@@ -69,4 +86,3 @@ def update_session(request, id):
                 'form': form,
             }
         return render(request, 'update-session.html', context)
-
