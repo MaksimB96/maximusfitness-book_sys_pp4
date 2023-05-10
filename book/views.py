@@ -5,7 +5,7 @@ from django.views import generic, View
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import SessionBook
-from .forms import CreateBooking
+from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
 
 
