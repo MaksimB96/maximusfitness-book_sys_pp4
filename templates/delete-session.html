@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1>Cancel Booking</h1>
+<p>Are you sure you would like to cancel?</p>
+<p>{{ session.date }}</p>
+<p>{{ session.time }}</p>
+
+<form action="" method="POST">
+    <input type="submit" value="Delete" class="btn btn-danger">
+    <a href="{% url 'manage-session' %}" class="btn btn-success">Keep</a>
+</form>
+{% endblock %}
