@@ -6,6 +6,7 @@
 <p>{{ session.time }}</p>
 
 <form action="" method="POST">
+    {% csrf_token %}
     <input type="submit" value="Delete" class="btn btn-danger">
     <a href="{% url 'manage-session' %}" class="btn btn-success">Keep</a>
 </form>
