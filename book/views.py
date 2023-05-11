@@ -85,12 +85,13 @@ def update_session(request, id):
 @login_required
 def delete_session(request, id):
     """
-    Provides functionality for deletion of items 
+    Provides functionality for deletion of items
     """
-    session = get_object_or_404(CreateBooking, pk=id, user=request.user)
+    session = get_object_or_404(SessionBook, pk=id, user=request.user)
     if request.method == 'POST':
         session.delete()
-        return redirect('manage_session')
+        return redirect('manage-session')
+
     return render(request, 'delete-session.html', {
-        'session': session
+        'session': session,
     })
