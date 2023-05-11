@@ -43,12 +43,13 @@ def book_session(request):
         form = CreateBooking(request.POST, instance=booking)
         if form.is_valid():
             form.save()
+            messages.success(request, "Your Session has been booked!")
             return redirect('manage-session')
     else:
         form = CreateBooking()
     return render(request, 'book-session.html', {
         'form': form
-        })
+    })
 
 
 @login_required
@@ -74,6 +75,7 @@ def update_session(request, id):
         form = UpdateBooking(request.POST, instance=session)
         if form.is_valid():
             form.save()
+            messages.success(request, "Booking Has Been Updated Successfully!")
             return redirect('manage-session')
     else:
         form = UpdateBooking()
@@ -91,8 +93,8 @@ def delete_session(request, id):
     session = get_object_or_404(SessionBook, pk=id, user=request.user)
     if request.method == 'POST':
         session.delete()
+        messages.success(request, "Session Deleted Successfully!")
         return redirect('manage-session')
-
     return render(request, 'delete-session.html', {
         'session': session,
     })
