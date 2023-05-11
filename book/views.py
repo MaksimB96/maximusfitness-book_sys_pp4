@@ -80,3 +80,17 @@ def update_session(request, id):
         'form': form,
     }
     return render(request, 'update-session.html', context)
+
+
+@login_required
+def delete_session(request, id):
+    """
+    Provides functionality for deletion of items 
+    """
+    session = get_object_or_404(CreateBooking, pk=id, user=request.user)
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('manage_session')
+    return render(request, 'delete-session.html', {
+        'session': session
+    })
