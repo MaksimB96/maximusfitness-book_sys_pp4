@@ -47,7 +47,8 @@ def book_session(request):
     else:
         form = CreateBooking()
     return render(request, 'book-session.html', {
-        'form': form})
+        'form': form
+        })
 
 
 @login_required
