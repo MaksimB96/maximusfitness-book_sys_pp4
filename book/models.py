@@ -29,7 +29,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    time = models.CharField("Pick a Time", max_length=20)
+    time = models.TimeField("Pick a Time", null=True)
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
