@@ -1,9 +1,11 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 <div class="container"></div>
 <div class="header text-center">
     <h1 class="font-head mt-5">Your Sessions</h1>
     <p class="font-body">Manage your sessions here</p>
 </div>
+{% if items %}
 {% for item in items %}
 <div class="py-5">
     <div class="container">
@@ -12,11 +14,6 @@
                 <div class="card">
                     <div class="card-block">
                         <h4 class="card-title font-head">
-                            <i class="fa-duotone fa-dumbbell" style="
-                  --fa-primary-color: #000000;
-                  --fa-secondary-color: #c60101;
-                  --fa-secondary-opacity: 1;
-                "></i>
                             {{ item.fname }}
                         </h4>
                         <p class="card-text font-body p-y-1">
@@ -37,14 +34,15 @@
                         </p>
                         {% endif %}
                         <a href="{% url 'update-session' item.id %}" class="card-link btn btn-success">Update</a>
-                        <a href="{% url 'delete-session' session.id %}" class="card-link btn btn-danger">Delete</a>
+                        <a href="{% url 'delete-session' item.id %}" class="card-link btn btn-danger">Delete</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% empty %}
+{% endfor %}
+{% else %}
 <div class="container manage-cont">
     <div class="row">
         <div class="col-md-12 text-center mt-5 mb-5">
@@ -53,4 +51,5 @@
         </div>
     </div>
 </div>
-{% endfor %} {% endblock %}
+{% endif %}
+{% endblock %}

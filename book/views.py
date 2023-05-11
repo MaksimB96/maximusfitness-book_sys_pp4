@@ -69,7 +69,7 @@ def update_session(request, id):
     Provides Functionality for Updating existing booking
     """
     if request.method == 'POST':
-        session = get_object_or_404(CreateBooking, pk=id, user=request.user)
+        session = get_object_or_404(SessionBook, pk=id, user=request.user)
         form = UpdateBooking(request.POST, instance=session)
         if form.is_valid():
             form.save()
@@ -87,7 +87,7 @@ def delete_session(request, id):
     """
     Provides functionality for deletion of items
     """
-    session = get_object_or_404(CreateBooking, pk=id, user=request.user)
+    session = get_object_or_404(SessionBook, pk=id, user=request.user)
     if request.method == 'POST':
         session.delete()
         return redirect('manage-session')
