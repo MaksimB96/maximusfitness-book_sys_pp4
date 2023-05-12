@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% load i18n %}
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
@@ -9,10 +11,7 @@
 <div class="container-fluid sign-up-cont">
     <div class="row main-content text-center mx-auto">
         <div class="col-md-4 text-center sign-in-info">
-            <span class="sign-in-logo">
-                <h2><span>logohere</span></h2>
-            </span>
-            <h4 class="sign-in-title font-head">Maximus Fitness</h4>
+            <img src="{% static 'img/croppedlogo.png' %}" alt="logo2" class="sign-in-logo">
         </div>
 
         <div class="col-md-8 col-xs-12 col-sm-12 sign-in-form">
@@ -31,7 +30,7 @@
                     </form>
                 </div>
                 <div class="row">
-                    <p class="font-body text-muted text-center">{% blocktrans %}Already have an account? Then please <a
+                    <p class="form_para font-body text-muted">{% blocktrans %}Already have an account? Then please <a
                             href="{{ login_url }}">sign
                             in</a>.
                         {% endblocktrans %}</p>

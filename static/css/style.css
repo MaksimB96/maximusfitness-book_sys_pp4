@@ -254,6 +254,10 @@
 
 /* -------------------------------------------Django-forms */
 
+.sign-in-logo {
+    height: 50px;
+}
+
 .sign-up-cont {
     height: 813px;
 }
@@ -285,15 +289,20 @@
     margin: 0 auto;
 }
 
+.form_para {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
 .sign-in-form {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: 1px solid var(--brand2);
 }
 
-.login {
-    padding: 0 2em;
-    text-align: center;
+.login,
+.signup {
+    text-align: left;
 }
 
 .login label {
