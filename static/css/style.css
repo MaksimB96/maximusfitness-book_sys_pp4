@@ -240,6 +240,38 @@
 
 /* -------------------------------------------Book Session */
 
+.book-in-cont {
+    height: fit-content;
+    width: fit-content;
+}
+
+.book-content {
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
+    background-color: var(--brand2);
+    color: var(--brand3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.book-content h1 {
+    text-align: center;
+}
+
+.book_form input {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.book-btn {
+    margin-bottom: 20px;
+}
+
+
+
 /* -------------------------------------------Your Session */
 
 .manage-cont {
@@ -255,7 +287,7 @@
 /* -------------------------------------------Django-forms */
 
 .sign-in-logo {
-    height: 50px;
+    height: 160px;
 }
 
 .sign-up-cont {

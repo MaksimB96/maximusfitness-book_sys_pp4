@@ -1,16 +1,19 @@
 {% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
 
-<div class="container mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-12 mx-auto">
-            {% if user.is_authenticated %}
-            <h1 class="font-head text-center">Book Your Session</h1>
-            <form method="POST">
-                {% csrf_token %} {{ form | crispy }}
-                <input type="submit" value="Book Now" class="btn btn-danger">
-            </form>
-            {% else %} {% endif %}
+<div class="container-fluid book-in-cont">
+    <div class="row book-content mx-auto">
+        {% if user.is_authenticated %}
+        <div class="col-md-8 col-xs-12 col-sm-12">
+            <h1 class="mt-5 mb-5 font-head">Book Your Session</h2>
+                <form class="book_form" method="POST">
+                    {% csrf_token %}
+                    {{ form | crispy }}
+                    <input type="submit" value="Book Now" class="btn btn-danger book-btn">
+                </form>
+                {% else %}
+                {% endif %}
         </div>
+
     </div>
 </div>
 
