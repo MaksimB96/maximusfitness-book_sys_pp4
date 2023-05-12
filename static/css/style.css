@@ -78,6 +78,38 @@
     color: var(--brand3);
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .jumbotron h1 {
+        text-align: center;
+        font-size: 50px;
+        margin-right: 0;
+    }
+
+    .jumbotron .lead {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .location {
+        display: none;
+    }
+
+    .right-slide-img {
+        display: none;
+    }
+
+    .sign-up-cont {
+        height: 624px;
+    }
+}
+
 /* -----------About */
 
 #about-section {
@@ -220,17 +252,16 @@
     text-shadow: 2px 2px 6px #000000;
 }
 
-/* -------------------------------------------Sign-Up */
+/* -------------------------------------------Django-forms */
 
 .sign-up-cont {
-    height: 100vh;
+    height: 813px;
 }
 
 .sign-up-col {
     padding-top: 100px;
 }
 
-/* -------------------------------------------Sign-In */
 
 .main-content {
     width: 50%;
@@ -248,6 +279,10 @@
     flex-direction: column;
     justify-content: center;
     color: var(--brand3);
+}
+
+.form_head {
+    margin: 0 auto;
 }
 
 .sign-in-form {
@@ -268,7 +303,11 @@
 
 
 #id_login,
-#id_password {
+#id_password,
+#id_username,
+#id_email,
+#id_password1,
+#id_password2 {
     border-radius: 20px;
 }
 
@@ -294,6 +333,13 @@ p #id_remember {
 @media screen and (min-width: 641px) and (max-width: 800px) {
     .main-content {
         width: 70%;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    .sign-up-cont {
+        height: 624px;
     }
 }
 
@@ -354,34 +400,4 @@ footer {
 
 footer img {
     margin-top: 20px;
-}
-
-/* -------------------------------------------Media Query */
-
-@media screen and (max-width: 768px) {
-    .navbar-nav {
-        align-items: center;
-    }
-
-    .jumbotron h1 {
-        text-align: center;
-        font-size: 50px;
-        margin-right: 0;
-    }
-
-    .jumbotron .lead {
-        font-size: 15px;
-        text-align: center;
-        margin-right: 0;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    .location {
-        display: none;
-    }
-
-    .right-slide-img {
-        display: none;
-    }
 }
