@@ -22,30 +22,24 @@
                     <h2 class="font-head">{% trans "Sign In" %}</h2>
                 </div>
                 <div class="row">
-
+                    <form class="login form-group" method="POST" action="{% url 'account_login' %}">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        {% if redirect_field_value %}
+                        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+                        {% endif %}
+                        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <p>{% blocktrans %}If you have not created an account yet, then please
+                        <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
+                    </p>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-
-
-
-
-
-<p>{% blocktrans %}If you have not created an account yet, then please
-    <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}
-</p>
-
-
-<form class="login" method="POST" action="{% url 'account_login' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    {% if redirect_field_value %}
-    <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-    {% endif %}
-    <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
-</form>
 
 {% endblock %}
