@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container-fluid offset-md-3">
     <div class="row main-content text-center">
         <div class="col-md-4 text-center sign-in-info">
             <span class="sign-in-logo">
@@ -18,8 +18,8 @@
 
         <div class="col-md-8 col-xs-12 col-sm-12 sign-in-form">
             <div class="container-fluid">
-                <div class="row">
-                    <h2 class="font-head">{% trans "Sign In" %}</h2>
+                <div class="row text-center">
+                    <h2 class=" mt-3 mb-5 font-head">{% trans " Sign In" %}</h2>
                 </div>
                 <div class="row">
                     <form class="login form-group" method="POST" action="{% url 'account_login' %}">
@@ -28,7 +28,7 @@
                         {% if redirect_field_value %}
                         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                         {% endif %}
-                        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+                        <button class="primaryAction btn btn-danger" type="submit">{% trans "Sign In" %}</button>
                     </form>
                 </div>
                 <div class="row">

@@ -246,6 +246,7 @@
     border-bottom-left-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     color: var(--brand3);
 }
 
@@ -253,6 +254,26 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: 1px solid var(--brand2);
+}
+
+.login {
+    padding: 0 2em;
+    text-align: center;
+}
+
+.login label {
+    padding-right: 5px;
+}
+
+
+
+#id_login,
+#id_password {
+    border-radius: 20px;
+}
+
+p #id_remember {
+    vertical-align: middle;
 }
 
 @media screen and (max-width: 640px) {
