@@ -14,7 +14,8 @@ class TimeInput(forms.TimeInput):
 class CreateBooking(forms.ModelForm):
     class Meta:
         model = SessionBook
-        fields = ('fname', 'lname', 'age', 'date', 'time', 'client_notes',)
+        fields = ('fname', 'lname', 'email', 'phone',
+                  'age', 'date', 'time', 'client_notes',)
         widgets = {
             'date': forms.DateInput(
                 format=('%Y-%m-%d'),

@@ -248,7 +248,8 @@
 .book-content {
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
-    background-color: var(--brand2);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 28%, rgba(154, 155, 156, 1) 100%);
     color: var(--brand3);
     display: flex;
     align-items: center;
@@ -265,12 +266,9 @@
     width: 100%;
 }
 
-
 .book-btn {
     margin-bottom: 20px;
 }
-
-
 
 /* -------------------------------------------Your Session */
 
@@ -297,7 +295,6 @@
 .sign-up-col {
     padding-top: 100px;
 }
-
 
 .main-content {
     width: 50%;
@@ -341,14 +338,14 @@
     padding-right: 5px;
 }
 
-
-
 #id_login,
 #id_password,
 #id_username,
 #id_email,
 #id_password1,
-#id_password2 {
+#id_password2,
+#id_date,
+#id_time {
     border-radius: 20px;
 }
 
@@ -378,13 +375,10 @@ p #id_remember {
 }
 
 @media only screen and (max-width: 479px) {
-
     .sign-up-cont {
         height: 624px;
     }
 }
-
-/* -------------------------------------------Log-Out */
 
 /* -------------------------------------------Footer */
 

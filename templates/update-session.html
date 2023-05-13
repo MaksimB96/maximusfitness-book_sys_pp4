@@ -1,9 +1,33 @@
 {% extends 'base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<form method="POST">
+
+<div class="header text-center">
+    <h1 class="font-head mt-5">Update Session</h1>
+</div>
+
+
+<div class="container sign-up-cont mt-5">
+    <div class="row hidden-md-up">
+        <div class="col-md-4 mx-auto">
+            <div class="card">
+                <div class="card-block">
+                    <form method="POST">
+                        {{ form | crispy }}
+                        {% csrf_token %}
+                        <div class="card-footer text-center">
+                            <button type="submit" class="btn btn-success">Confirm</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <form method="POST">
     {{ form | crispy }}
     {% csrf_token %}
     <button type="submit" class="btn btn-success">Confirm</button>
-</form>
+</form> -->
+
 {% endblock content %}
