@@ -39,4 +39,4 @@ class SessionBook(models.Model):
         ordering = ['-sent_on']
 
     def __str__(self):
-        return str(self.id)
+        return f"{self.fname} | {self.date} | {self.time}"
