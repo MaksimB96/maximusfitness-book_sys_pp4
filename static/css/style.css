@@ -201,7 +201,8 @@
 /* -----------Contact */
 
 #contact-section {
-    background: var(--brand2);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 28%, rgba(154, 155, 156, 1) 100%);
     padding-bottom: 40px;
 }
 
@@ -378,13 +379,13 @@ p #id_remember {
 }
 
 @media only screen and (max-width: 479px) {
-    
-    .jumbotron{
+
+    .jumbotron {
         text-align: center !important;
     }
 
-    .jumbotron .container button{
-        margin-right: 5px !important; 
+    .jumbotron .container button {
+        margin-right: 5px !important;
     }
 
     iframe {
