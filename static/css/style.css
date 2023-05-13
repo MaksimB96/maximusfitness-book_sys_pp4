@@ -353,6 +353,10 @@ p #id_remember {
     vertical-align: middle;
 }
 
+.card {
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 640px) {
     .main-content {
         width: 90%;

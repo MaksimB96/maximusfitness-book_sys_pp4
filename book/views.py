@@ -59,6 +59,7 @@ def get_session(request):
     """
     user = request.user
     items = SessionBook.objects.filter(user=user)
+    paginate_by = 3
     return render(request, 'manage-session.html', {
         'user': user,
         'items': items,
