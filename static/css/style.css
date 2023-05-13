@@ -353,10 +353,6 @@ p #id_remember {
     vertical-align: middle;
 }
 
-.card {
-    border-radius: 20px;
-}
-
 @media screen and (max-width: 640px) {
     .main-content {
         width: 90%;
@@ -376,11 +372,19 @@ p #id_remember {
     .main-content {
         width: 70%;
     }
+
+    .card .card-footer a {
+        font-size: 10px;
+    }
 }
 
 @media only screen and (max-width: 479px) {
     .sign-up-cont {
         height: 624px;
+    }
+
+    .card-margin-bottom {
+        margin-bottom: 10px;
     }
 }
 
