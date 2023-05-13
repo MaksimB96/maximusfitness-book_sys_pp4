@@ -4,12 +4,13 @@
     <h1 class="font-head mt-5">Your Sessions</h1>
     <p class="font-body">Manage your sessions here</p>
 </div>
-{% if items %}
-{% for item in items %}
+
 
 
 <div class="container sign-up-cont mt-5">
     <div class="row hidden-md-up">
+        {% if items %}
+        {% for item in items %}
         <div class="col-md-4">
             <div class="card">
                 <div class="card-block">
@@ -42,11 +43,10 @@
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 
-
-{% endfor %}
 {% else %}
 <div class="container manage-cont">
     <div class="row">
