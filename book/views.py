@@ -2,9 +2,9 @@ from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.views import generic, View
+from django.core.paginator import paginator
 from django.core.mail import send_mail
 from django.conf import settings
-from django.urls import reverse
 from .models import SessionBook
 from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
@@ -59,7 +59,6 @@ def get_session(request):
     """
     user = request.user
     items = SessionBook.objects.filter(user=user)
-    
     return render(request, 'manage-session.html', {
         'user': user,
         'items': items,
