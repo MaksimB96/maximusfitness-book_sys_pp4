@@ -78,6 +78,7 @@
 .btn-outline-danger,
 .btn-success {
     border-radius: 20px !important;
+    margin-right: 10px;
 }
 
 .btn-outline-danger a {
@@ -288,6 +289,10 @@
     padding-top: 10%;
 }
 
+.manage-cont-1 {
+    height: 100vh;
+}
+
 .manage-cont .row h2 {
     font-size: 40px;
     text-shadow: 2px 2px 6px #000000;
@@ -310,7 +315,7 @@
     padding-top: 100px;
 }
 
-.main-content {
+.manage-cont .main-content {
     width: 50%;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
