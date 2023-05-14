@@ -1,3 +1,10 @@
+// Pre-Loader
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function () {
+    loader.style.display = "none";
+});
+
 /**
  * Scroll reveal utilizes npm to create on scroll interactivity
  */

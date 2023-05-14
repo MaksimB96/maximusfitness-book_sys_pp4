@@ -19,6 +19,17 @@
     font-family: "Source Sans Pro", sans-serif;
 }
 
+/* -------------------------------------------Pre-Loader */
+
+#preloader {
+    background: var(--brand2) url("../img/preloader.gif") no-repeat center;
+    background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 /* -------------------------------------------Navbar */
 .navbar-styles {
     background: var(--brand2);
