@@ -302,6 +302,28 @@
     justify-content: center;
 }
 
+.step-links a {
+    color: var(--brand2);
+}
+
+.step-links a:hover {
+    text-decoration: none;
+    color: var(--brand1)
+}
+
+.step-links a:after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--brand1);
+    transition: 0.4s;
+}
+
+.step-links a:hover::after {
+    width: 100%;
+}
+
 /* -------------------------------------------Django-forms */
 
 .sign-in-logo {
