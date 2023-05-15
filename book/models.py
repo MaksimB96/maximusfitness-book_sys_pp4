@@ -12,16 +12,6 @@ class SessionBook(models.Model):
     Model For booking a one on one session
     """
 
-    TIMESLOT_LIST = (
-        (0, '09:00 - 10:30'),
-        (1, '10:30 - 12:00'),
-        (2, '12:00 - 13:30'),
-        (3, '13:30 - 15:00'),
-        (4, '15:00 - 16:30'),
-        (5, '16:30 - 18:00'),
-        (6, '18:00 - 19:30'),
-    )
-
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
     fname = models.CharField("First Name", max_length=15, blank=True)
@@ -39,7 +29,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    time = models.IntegerField("Pick a Time", choices=TIMESLOT_LIST, default=0)
+    time = models.TimeField("Pick a Time")
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
