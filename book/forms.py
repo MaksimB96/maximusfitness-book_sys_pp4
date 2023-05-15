@@ -26,11 +26,6 @@ class CreateBooking(forms.ModelForm):
                     'type': 'date'
                 }
             ),
-            'time': forms.TimeInput(
-                attrs={
-                    'type': 'time'
-                }
-            ),
         }
 
 

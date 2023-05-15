@@ -13,15 +13,13 @@ class SessionBook(models.Model):
     """
 
     TIMESLOT_LIST = (
-        (0, '09:00 - 09:30'),
-        (1, '10:00 - 10:30'),
-        (2, '11:00 - 11:30'),
-        (3, '12:00 - 12:30'),
-        (4, '13:00 - 13:30'),
-        (5, '14:00 - 14:30'),
-        (6, '15:00 - 15:30'),
-        (7, '16:00 - 16:30'),
-        (8, '17:00 - 17:30'),
+        (0, '09:00 - 10:30'),
+        (1, '10:30 - 12:00'),
+        (2, '12:00 - 13:30'),
+        (3, '13:30 - 15:00'),
+        (4, '15:00 - 16:30'),
+        (5, '16:30 - 18:00'),
+        (6, '18:00 - 19:30'),
     )
 
     user = models.ForeignKey(
@@ -41,7 +39,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    time = models.IntegerField("Pick a Time", choices=TIMESLOT_LIST)
+    time = models.IntegerField("Pick a Time", choices=TIMESLOT_LIST, default=0)
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
