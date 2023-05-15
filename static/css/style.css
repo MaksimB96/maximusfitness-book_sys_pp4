@@ -298,6 +298,10 @@
     text-shadow: 2px 2px 6px #000000;
 }
 
+.pagination {
+    justify-content: center;
+}
+
 /* -------------------------------------------Django-forms */
 
 .sign-in-logo {
@@ -417,6 +421,10 @@ p #id_remember {
 
     .sign-up-cont {
         height: 100vh;
+    }
+
+    .manage-cont-1 {
+        height: fit-content;
     }
 
     .card-margin-bottom {

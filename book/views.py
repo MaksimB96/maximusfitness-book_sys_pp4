@@ -7,6 +7,7 @@ from django.conf import settings
 from .models import SessionBook
 from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 class HomeTemplate(generic.TemplateView):
@@ -58,9 +59,12 @@ def get_session(request):
     """
     user = request.user
     items = SessionBook.objects.filter(user=user)
+    paginator = Paginator(items, 6)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     return render(request, 'manage-session.html', {
-        'user': user,
-        'items': items,
+        'page_obj': page_obj,
     })
 
 
