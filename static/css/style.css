@@ -238,6 +238,10 @@
     width: 100%;
 }
 
+.contact-form small {
+    color: var(--brand3);
+}
+
 .map-area {
     height: 100%;
     width: 100%;
@@ -341,7 +345,7 @@
     padding-top: 100px;
 }
 
-.manage-cont .main-content {
+.main-content {
     width: 50%;
     border-radius: 20px;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.7);
