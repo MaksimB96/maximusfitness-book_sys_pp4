@@ -402,6 +402,10 @@ p #id_remember {
     vertical-align: middle;
 }
 
+.update-card-style {
+    width: 100%;
+}
+
 @media screen and (max-width: 640px) {
     .main-content {
         width: 90%;
