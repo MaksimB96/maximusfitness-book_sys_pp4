@@ -53,6 +53,11 @@
     width: 100%;
 }
 
+#msg {
+    position: absolute;
+    right: 20%;
+}
+
 /* -------------------------------------------Index */
 
 /* -----------Jumbotron */

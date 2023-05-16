@@ -32,7 +32,6 @@ class HomeTemplate(generic.TemplateView):
             [email],
         )
         home = reverse('home')
-        # message.success implement here! (flash message)
         return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
 
 
