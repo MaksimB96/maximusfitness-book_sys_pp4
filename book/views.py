@@ -8,7 +8,7 @@ from .models import SessionBook
 from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
 from django.urls import reverse
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.core.paginator import Paginator
 
 
 class HomeTemplate(generic.TemplateView):
