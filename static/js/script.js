@@ -5,6 +5,41 @@ window.addEventListener("load", function () {
     loader.style.display = "none";
 });
 
+
+/**
+ * This function validates contact form on index
+ */
+
+function validation(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("text_area").value;
+    var error_message = document.getElementById("error_message");
+    var text;
+
+    if(name.length < 5){
+        text = "Please Enter a valid name";
+        error_message.innerHTML = text;
+        return false;
+    }
+
+    if(email.indexOf("@") == -1 || email.length < 6){
+        text = "Please Enter A Valid Email";
+        error_message.innerHTML = text;
+        return false;
+    }
+
+    if(message.length <= 140){
+        text = "Please Enter A Valid Message Above 140 Characters";
+        error_message.innerHTML = text;
+        return false;
+    }
+
+    alert("Thank you for getting in contact!")
+    return true;
+}
+
+
 /**
  * Scroll reveal utilizes npm to create on scroll interactivity
  */

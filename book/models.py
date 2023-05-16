@@ -37,6 +37,7 @@ class SessionBook(models.Model):
 
     class Meta:
         ordering = ['-sent_on']
+        unique_together = ('time', 'date',)
 
     def __str__(self):
         return f"{self.fname} | {self.date} | {self.time}"

@@ -130,24 +130,25 @@
             <div class="col-md-12 col-sm-12">
                 <h2 class="font-head text-center">Contact Us</h2>
             </div>
+            <div id="error_message" class="font-body"></div>
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form role="form" name="index-form" method="POST" action="{% url 'home' %}">
+                    <form role="form" name="index-form" method="POST" id="contact_form_index" onsubmit="return validation()">
                         {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
-                                placeholder="Enter your name" name="name" required>
+                                placeholder="Enter your name" id="name" name="name" required>
                         </div>
                         <div class="con-email form-group">
-                            <input type="email" class="form-control font-body" placeholder="Enter email" name="email"
+                            <input type="email" class="form-control font-body" placeholder="Enter email" id="email" name="email"
                                 required>
                             <small id="emailHelp" class="form-text">We'll never share your email with anyone
                                 else.</small>
                         </div>
                         <div class="con-text form-group">
-                            <textarea class="form-control font-body" name="contact-text" cols="30" rows="10"
+                            <textarea class="form-control font-body" id="text_area" name="contact-text" cols="30" rows="10"
                                 placeholder="Enter your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-danger con-submit" id="submit">Submit</button>
