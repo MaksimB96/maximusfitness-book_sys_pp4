@@ -31,7 +31,7 @@ class CreateBooking(forms.ModelForm):
                 ),
 
         }
-    
+
     def clean_date(self):
         data = self.cleaned_data['date']
         if data < timezone.now().date():

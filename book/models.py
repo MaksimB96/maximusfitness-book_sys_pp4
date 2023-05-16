@@ -11,7 +11,6 @@ class SessionBook(models.Model):
     """
     Model For booking a one on one session
     """
-   
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
     fname = models.CharField("First Name", max_length=15, blank=True)
