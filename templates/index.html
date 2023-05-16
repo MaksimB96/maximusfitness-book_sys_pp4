@@ -16,8 +16,8 @@
             {% else %}
             <p class="lead font-body">Welcome to the maximus fitness booking system! Please login to book a session. If
                 you are new please sign up to get started on your fitness journey! </p>
-            <button class="btn btn-outline-danger"><a href="{% url 'account_login' %}">Login</a></button>
-            <button class="btn btn-outline-danger"><a href="{% url 'account_signup' %}">Sign Up</a></button>
+            <a href="{% url 'account_login' %}" class="btn btn-outline-danger">Login</a>
+            <a href="{% url 'account_signup' %}" class="btn btn-outline-danger">Sign Up</a>
             {% endif %}
         </div>
     </div>
@@ -120,7 +120,6 @@
             </div>
         </div>
     </div>
-    </div>
 </section>
 
 <!-- Contact Form -->
@@ -131,12 +130,12 @@
                 <h2 class="font-head text-center">Contact Us</h2>
                 <p class="font-body text-center" id="error_message"></p>
             </div>
-            
         </div>
+
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form role="form" name="index-form" method="POST" id="contact_form_index" onsubmit="return validation()">
+                    <form name="index-form" method="POST" id="contact_form_index" onsubmit="return validation()">
                         {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
@@ -156,6 +155,7 @@
                     </form>
                 </div>
             </div>
+
             <div class="col-md-6 col-sm-12">
                 <div class="map-area">
                     <iframe
