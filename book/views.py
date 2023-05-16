@@ -29,8 +29,8 @@ class HomeTemplate(generic.TemplateView):
                 subject,
                 body,
                 email,
-                [email],
                 [settings.DEFAULT_FROM_EMAIL],
+                fail_silently=False,
             )
         home = reverse('home')
         return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
