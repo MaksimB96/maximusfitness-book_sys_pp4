@@ -29,9 +29,8 @@ class HomeTemplate(generic.TemplateView):
             send_mail(subject, body, email, recipient_list)
             messages.success(request, "Thank you for getting in contact!")
             home = reverse('home')
-            return HttpResponseRedirect(home)
-            
-        return super().post(request)
+        
+        return HttpResponseRedirect(home)
 
 
 @login_required
