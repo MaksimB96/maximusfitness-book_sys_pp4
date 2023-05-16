@@ -18,7 +18,7 @@ class HomeTemplate(generic.TemplateView):
     """
     template_name = "index.html"
 
-    def post_email(request):
+    def post(self, request):
         if request.method == "POST":
             name = request.POST.get("name")
             email = request.POST.get("email")
@@ -26,10 +26,11 @@ class HomeTemplate(generic.TemplateView):
 
             subject = 'Message from ' + name
             recipient_list = [settings.EMAIL_HOST_USER]
-
             send_mail(subject, body, email, recipient_list)
+            messages.success(request, "Thank you for getting in contact!")
             home = reverse('home')
-            return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
+            return HttpResponseRedirect(home)
+            
         return super().post(request)
 
 
