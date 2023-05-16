@@ -26,6 +26,10 @@ class CreateBooking(forms.ModelForm):
                     'type': 'date'
                 }
             ),
+            'time': forms.TimeInput(attrs={
+                'type': 'time'}
+                ),
+
         }
     
     def clean_date(self):
@@ -48,4 +52,7 @@ class UpdateBooking(forms.ModelForm):
                     'type': 'date'
                 }
             ),
+            'time': forms.TimeInput(attrs={
+                'type': 'time'}
+                ),
         }
