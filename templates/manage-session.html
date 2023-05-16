@@ -1,15 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
+
 <div class="header text-center">
     <h1 class="font-head mt-5">Your Sessions</h1>
     <p class="font-body">Manage your sessions here</p>
 </div>
-
-
-
+{% if page_obj %}
 <div class="container manage-cont-1 mt-5">
     <div class="row hidden-md-up">
-        {% if page_obj %}
         {% for item in page_obj %}
         <div class="card-margin-bottom col-md-4 col-sm-6 mt-3">
             <div class="card">
@@ -44,6 +42,7 @@
             </div>
         </div>
         {% endfor %}
+
     </div>
 </div>
 
@@ -65,14 +64,16 @@
     </span>
 </div>
 
+
 {% else %}
 <div class="container manage-cont">
     <div class="row">
-        <div class="col-md-12 text-center mt-5 mb-5">
-            <h2 class="font-head">You Currently Have no booked slots!</h2>
-            <p class="font-body text-muted">Please go to the "Book A Session"</p>
+        <div class="col-md-12 text-center">
+            <h2 class ="font-head">You currently have no bookings</h2>
+            <p class="text-muted">Please go to "Book A session"</p>
         </div>
     </div>
 </div>
 {% endif %}
+
 {% endblock %}
