@@ -11,6 +11,15 @@ class SessionBook(models.Model):
     """
     Model For booking a one on one session
     """
+    TIME_CHOICES = {
+        ('08:00', '8:00 AM'),
+        ('10:00', '10:00 AM'),
+        ('13:00', '13:00 PM'),
+        ('15:00', '15:00 AM'),
+        ('17:00', '17:00 AM'),
+        ('19:00', '19:00 AM'),
+    }
+
 
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, null=True, blank=True)
@@ -29,7 +38,7 @@ class SessionBook(models.Model):
     email = models.EmailField("E-Mail", )
     phone = models.CharField("Phone No.", max_length=15)
     date = models.DateField("Pick a Date", default=datetime.now)
-    time = models.TimeField("Pick a Time")
+    time = models.TimeField("Pick a Time", choices=TIME_CHOICES)
     client_notes = models.TextField("Leave Your Request Here", blank=True)
     sent_on = models.DateField(default=datetime.now)
     update_on = models.DateTimeField(auto_now=True, blank=True)
