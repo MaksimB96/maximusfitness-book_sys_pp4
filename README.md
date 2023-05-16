@@ -1,4 +1,5 @@
-# Love Body
+# Maximus Fitness Booking System
+
 (Developer: Maksims Buraks)
 
 ![Mockup image](docs/am-i-responsive.png)
@@ -7,77 +8,99 @@
 
 ## Table of contents
 
-1. [Project Goals](#project-goals)
-    * [User Goals](#user-goals)
-    * [Site Owner Goals](#site-owner-goals)
-2. [User Experience](#user-experience)
-    * [Target Audience](#target-audience)
-    * [User Requirements and Expectations](#user-requirements-and-expectations)
-    * [User Stories](#user-stories)
-3. [Design](#design)
-    * [Design](#design-choices)
-    * [Color](#colors)
-    * [Fonts](#font)
-    * [Structure](#structure)
-    * [Wireframe](#wire-frame)
-4. [Tech Used](#tech-used)
-    * [Languages](#languages)
-    * [Tools](#tools)
-5. [Features](#features)
-6. [Code Validation & Testing](#validation)
-    * [Html](#html-validation)
-    * [Css](#css-validation)
-    * [javascript](#js-validation)
-    * [Acessability](#acessability)
-    * [Perforamnce](#performnce)
-    * [User Story Testing](#user-story-testing)
-7. [Bugs](#bugs)
-8. [Deployment](#deploy)
-9. [Future Features](#future-features)
-10. [Credits](#credits)
-11. [Acknowledgements](#acknowledgements)
+- [Maximus Fitness Booking System](#maximus-fitness-booking-system)
+  - [Table of contents](#table-of-contents)
+  - [Project Goals](#project-goals)
+    - [User Goals](#user-goals)
+    - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+    - [User Stories](#user-stories)
+      - [First-time User](#first-time-user)
+      - [Returning User](#returning-user)
+      - [Site Owner](#site-owner)
+  - [Design](#design)
+    - [Design Choices](#design-choices)
+    - [Colour](#colour)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+    - [Wireframes](#wireframes)
+  - [Tech Used](#tech-used)
+    - [Languages](#languages)
+    - [Tools](#tools)
+  - [Features](#features)
+    - [Logo and Nav-Bar/ Home buttons](#logo-and-nav-bar-home-buttons)
+    - [Footer](#footer)
+    - [Quiz page](#quiz-page)
+    - [Feedback Form](#feedback-form)
+  - [Validation](#validation)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
+    - [JS Validation](#js-validation)
+    - [Accessability](#accessability)
+    - [Performance](#performance)
+    - [Tests](#tests)
+      - [Devices tested on on:](#devices-tested-on-on)
+      - [Browser tested on on:](#browser-tested-on-on)
+    - [Testing User Stories](#testing-user-stories)
+  - [Bugs](#bugs)
+  - [Deployment](#deployment)
+  - [Future Features](#future-features)
+  - [Credits](#credits)
+    - [Media](#media)
+    - [Code](#code)
+  - [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
 ### User Goals
-    -Finding a site that provides a fun way to test users fitness knowledge
-    -To test training knowledge
-    -To test nutrition knowledge
-    -Find a way to leave feedback to improve quiz
+
+    -Finding a site that provides ability to book a one on one session
+    -To Create Bookings
+    -To Update Bookings
+    -To Delete Bookings
+    -To Manage Bookings
+    -To Create Account
 
 ### Site Owner Goals
-    -Provide a simple and fun way to test visitor knowledge 
-    -Provide an area to leave feedback
-    -Make sure contact deetails being left are real people
+
+    -Provide a simple and clean approach to booking sessions
+    -Provide an area to get in contact
+    -To manage and confirm bookings
 
 ## User Experience
 
 ### Target Audience
-    -People looking to test fitness Knowledge
-    -People looking to test nutrition Knowledge
+
+    -People looking to book a session
 
 ### User Requirements and Expectations
+
     -A simple and natural way to navigate the website
     -Quick acessibility to relevant information
     -Appealing design that responds accordingly
-    -A simple way to get in contact, and leave feedback
+    -A simple way to get in contact/book etc.
     -Accessibility
 
 ### User Stories
 
 #### First-time User
-1. As a first time user, I want to test my fitness knowledge
+
+1. As a first time user, I want to book a session
 2. As a first time user, I want to test my nutrition knowledge
 3. As a first time user, I want information presented in one location
-4. As a first time user, I want to leave feedback for further addition of questions
+4. As a first time user, I want to get in contact for more info
 
 #### Returning User
+
 5. As a returning user I want to refresh my knowledge on fitness
 6. As a returning user I want to refresh my knowledge on nutrition
 7. As a returning user I want to see additional quesstions added
 8. As a returning user I want to be able to locate relevant social links
 
 #### Site Owner
+
 9. As a site owner I want people to locate relevant information to the quiz
 10. As a site owner I want people to be able to play as many times 
 11. As a site owner I want individuals to get in contact
@@ -85,7 +108,7 @@
 ## Design
 
 ### Design Choices
-The website was developed in such a way that had a minimal and colourful approach that is not too much to overload the senses. It has all relevaant information on the home page that allows users to jump directly to the relevant points of interest.
+Website design took into consideration company colors and elements. The website follows a clean and minimal design in order to make readability and accesability easy
 
 ### Colour
 Color Choices contain a slightly colder shade of greens and neutral greys and white to compliment all elements. A less satturated green was used as many associate the higher saturated colors with 'vegan'. Highlight color of oraange was used as it plays well with the secondary colors.
@@ -111,25 +134,31 @@ The website is made up of 3 pages:
     -A contact page that allows easy contact, validation.
 
 ### Wireframes
+
 <details><summary>Home</summary>
 <img src="docs/wireframes/index-wireframe.png">
 </details>
+
 <details><summary>Quiz</summary>
 <img src="docs/wireframes/quiz-wireframe.png">
 </details>
+
 <details><summary>Feedback</summary>
 <img src="docs/wireframes/form-wireframe.png">
 </details>
+
 -Tablet view is exactly the same as desktop!
 
 ## Tech Used
 
 ### Languages
+
     -HTML
     -CSS
     -Java Script
 
 ### Tools
+
     -Git
     -Git Hub
     -Git Pod
@@ -145,9 +174,11 @@ The website is made up of 3 pages:
     -pixelr
 
 ## Features
+
 The Website consists of 3 pages with 11 features
 
 ### Logo and Nav-Bar/ Home buttons
+
     -featured on all three pages
     -Home page Icons have zoom effect and has all info on one page to prevent excessive travel
     -Nav bar is fully responsive and changes to a burger style on mobile devices. Nav bar links to all relevant pages allowing for quick access.
@@ -156,9 +187,11 @@ The Website consists of 3 pages with 11 features
     -User stories adressed: 3, 9.
     
 ![Logo & Navbar](docs/features/nav-bar.png)
+
 <br>
 
 ![Logo & Navbar](docs/features/nav-bar-select.png)
+
 <br>
 
 ![Logo & Navbar](docs/features/burger-nav-home.png)
@@ -167,6 +200,7 @@ The Website consists of 3 pages with 11 features
 
 
 ### Footer
+
     -footer conistent on all pages with hover effect in order to provide clear feedback on selection
     -User stories adressed: 8.
 
@@ -194,18 +228,23 @@ The Website consists of 3 pages with 11 features
     -User stories adreessed: 4, 7, 11. 
 
 ![Feedback-form](docs/features/form-feat.png)
+
 <br>
 
 ![Feedback-form](docs/features/invalidemail.png)
+
 <br>
 
 ![Feedback-form](docs/features/valid-email.png)
+
 <br>
 
 ![Feedback-form](docs/features/fullname-rreeq.png)
+
 <br>
 
 ![Feedback-form](docs/features/fullname-valid.png)
+
 <br>
 
 ![Feedback-form](docs/features/feedback-to-me.png)
@@ -221,9 +260,11 @@ W3C mark-up was utilised in order to validate html of the website. All Pages pas
 <details><summary>Index</summary>
 <img src="docs/validations/index-valid.png">
 </details>
+
 <details><summary>Fitness Quiz</summary>
 <img src="docs/validations/fitquiz-valid.png">
 </details>
+
 <details><summary>Feedback</summary>
 <img src="docs/validations/cont-valid.png">
 </details>
