@@ -18,7 +18,7 @@ class HomeTemplate(generic.TemplateView):
     """
     template_name = "index.html"
 
-    def post(request):
+    def post_email(request):
         if request.method == "POST":
             name = request.POST["name"]
             email = request.POST["email"]
