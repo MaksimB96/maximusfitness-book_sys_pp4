@@ -12,6 +12,9 @@ from django.core.paginator import Paginator
 
 
 def index_view(request):
+    if request.method == 'POST':
+        messages.success(request, "Thank you for getting in contact!")
+        return redirect('home')
     return render(request, 'index.html')
 
 @login_required
