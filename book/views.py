@@ -47,7 +47,15 @@ def book_session(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Your Session has been booked!")
-            return redirect('manage-session')
+            return redirect('manage-session')   
+        else:
+            new_booking = form.save(commit=False)
+            existing_booking = SessionBook.objects.filter(date=new_booking.date, time=new_booking.time)
+            if existing_booking:
+                messages.error(request, "Time slot already booked!")
+                return redirect('book-session')
+            else:
+                form.save()    
     else:
         form = CreateBooking()
     return render(request, 'book-session.html', {
