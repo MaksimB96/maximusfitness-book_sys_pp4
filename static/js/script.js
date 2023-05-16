@@ -30,12 +30,11 @@ function validation(){
     }
 
     if(message.length <= 50){
-        text = "Please Enter A Valid Message Above 140 Characters";
+        text = "Please Enter A Valid Message Above 50 Characters";
         error_message.innerHTML = text;
         return false;
     }
 
-    alert("Thank you for getting in contact!")
     return true;
 }
 

@@ -33,7 +33,7 @@ class HomeTemplate(generic.TemplateView):
         )
         home = reverse('home')
         # message.success implement here! (flash message)
-        return HttpResponseRedirect(home)
+        return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
 
 
 @login_required
