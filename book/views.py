@@ -48,7 +48,6 @@ def book_session(request):
             form.save()
             messages.success(request, "Your Session has been booked!")
             return redirect('manage-session')   
-        else:
             new_booking = form.save(commit=False)
             existing_booking = SessionBook.objects.filter(date=new_booking.date, time=new_booking.time)
             if existing_booking:
