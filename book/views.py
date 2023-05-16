@@ -20,9 +20,9 @@ class HomeTemplate(generic.TemplateView):
 
     def post(self, request):
         if request.method == 'POST': 
-            name = request.POST.get("name")
-            email = request.POST.get("email")
-            body = request.POST.get("contact-text")
+            name = request.POST["name"]
+            email = request.POST["email"]
+            body = request.POST["contact-text"]
             subject = f"{name} has a message for you!"
 
             send_mail(
