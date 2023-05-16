@@ -11,13 +11,8 @@ from django.urls import reverse
 from django.core.paginator import Paginator
 
 
-class HomeTemplate(generic.TemplateView):
-    """
-    This view handles rendering the home page and deals with sending emails
-    via send_mail django functionality
-    """
-    template_name = "index.html"
-
+def index_view(request):
+    return render(request, 'index.html')
 
 @login_required
 def book_session(request):
