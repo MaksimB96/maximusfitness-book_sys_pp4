@@ -19,18 +19,17 @@ class HomeTemplate(generic.TemplateView):
     template_name = "index.html"
 
     def post(self, request):
-        if request.method == 'POST': 
-            name = request.POST["name"]
-            email = request.POST["email"]
-            body = request.POST["contact-text"]
-            subject = f"{name} has a message for you!"
+        name = request.POST["name"]
+        email = request.POST["email"]
+        body = request.POST["contact-text"]
+        subject = f"{name} has a message for you!"
 
-            send_mail(
-                subject,
-                body,
-                email,
-                [settings.DEFAULT_FROM_EMAIL],
-                fail_silently=False,
+        send_mail(
+            subject,
+            body,
+            email,
+            [settings.DEFAULT_FROM_EMAIL],
+            fail_silently=False,
             )
         home = reverse('home')
         return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
