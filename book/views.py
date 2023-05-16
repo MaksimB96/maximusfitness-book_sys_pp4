@@ -31,7 +31,7 @@ class HomeTemplate(generic.TemplateView):
                 [settings.EMAIL_HOST_USER],
                 )
             home = reverse('home')
-        return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
+            return HttpResponseRedirect(home, messages.success(request, "Thank you for getting in contact!"))
 
 
 @login_required
