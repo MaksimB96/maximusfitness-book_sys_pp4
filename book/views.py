@@ -30,7 +30,8 @@ class HomeTemplate(generic.TemplateView):
             [settings.DEFAULT_FROM_EMAIL],
             [email],
         )
-        return HttpResponse('home')
+        # message.success implement here! (flash message)
+        return HttpResponse('index.html')
 
 
 @login_required
@@ -57,8 +58,7 @@ def get_session(request):
     """
     Gets User bookings
     """
-    user = request.user
-    items = SessionBook.objects.filter(user=user)
+    items = SessionBook.objects.filter(user=request.user)
     paginator = Paginator(items, 6)
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
@@ -73,6 +73,7 @@ def update_session(request, id):
     """
     Provides Functionality for Updating existing booking
     """
+    form = UpdateBooking()
     if request.method == 'POST':
         session = get_object_or_404(SessionBook, pk=id, user=request.user)
         form = UpdateBooking(request.POST, instance=session)
@@ -80,8 +81,6 @@ def update_session(request, id):
             form.save()
             messages.success(request, "Booking Has Been Updated Successfully!")
             return redirect('manage-session')
-    else:
-        form = UpdateBooking()
     context = {
         'form': form,
     }
