@@ -12,7 +12,7 @@ window.addEventListener("load", function () {
 
 function validation(){
     var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
+    var email = document.getElementById("emailaddress").value;
     var message = document.getElementById("text_area").value;
     var error_message = document.getElementById("error_message");
     var text;
