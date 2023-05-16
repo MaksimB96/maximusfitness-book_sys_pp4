@@ -18,20 +18,6 @@ class HomeTemplate(generic.TemplateView):
     """
     template_name = "index.html"
 
-    def post(self, request):
-        if request.method == "POST":
-            name = request.POST.get("name")
-            email = request.POST.get("email")
-            body = request.POST.get("contact-text")
-
-            subject = 'Message from ' + name
-            recipient_list = [settings.EMAIL_HOST_USER]
-            send_mail(subject, body, email, recipient_list)
-            messages.success(request, "Thank you for getting in contact!")
-            home = reverse('home')
-        
-        return HttpResponseRedirect(home)
-
 
 @login_required
 def book_session(request):
