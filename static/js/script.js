@@ -29,7 +29,7 @@ function validation(){
         return false;
     }
 
-    if(message.length <= 140){
+    if(message.length <= 50){
         text = "Please Enter A Valid Message Above 140 Characters";
         error_message.innerHTML = text;
         return false;

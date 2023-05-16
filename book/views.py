@@ -7,6 +7,7 @@ from django.conf import settings
 from .models import SessionBook
 from .forms import CreateBooking, UpdateBooking
 from django.contrib.auth.decorators import login_required
+from django.urls import reverse
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
@@ -30,8 +31,9 @@ class HomeTemplate(generic.TemplateView):
             [settings.DEFAULT_FROM_EMAIL],
             [email],
         )
+        home = reverse('home')
         # message.success implement here! (flash message)
-        return HttpResponse('index.html')
+        return HttpResponseRedirect(home)
 
 
 @login_required
