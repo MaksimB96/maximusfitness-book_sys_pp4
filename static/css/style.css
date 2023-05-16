@@ -55,7 +55,8 @@
 
 #msg {
     position: absolute;
-    right: 20%;
+    right: 0;
+    width: 100%;
 }
 
 /* -------------------------------------------Index */
