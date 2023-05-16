@@ -11,14 +11,14 @@ class SessionBook(models.Model):
     """
     Model For booking a one on one session
     """
-    TIME_CHOICES = {
+    TIME_CHOICES = [
         ('08:00', '8:00 AM'),
         ('10:00', '10:00 AM'),
         ('13:00', '13:00 PM'),
         ('15:00', '15:00 PM'),
         ('17:00', '17:00 PM'),
         ('19:00', '19:00 PM'),
-    }
+    ]
 
 
     user = models.ForeignKey(
