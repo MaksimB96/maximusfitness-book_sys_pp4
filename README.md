@@ -37,6 +37,7 @@
   - [Validation](#validation)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
+    - [Python Validation](#python-validation)
     - [JS Validation](#js-validation)
     - [Accessability](#accessability)
     - [Performance](#performance)
@@ -267,10 +268,27 @@ W3C mark-up was utilised in order to validate html of the website. All Pages pas
 W3C CSS validator was utilised in order to make sure the css code passes standards with no errors.
 
 <details><summary>Full Document</summary>
-<img src="docs/validations/style-valid.png">
+<img src="docs/validation/css-valid.png">
 </details>
 
 <br>
+
+### Python Validation
+
+CI Python linter used here
+
+<details><summary>Forms</summary>
+<img src="docs/validation/forms-py.png">
+</details>
+
+<details><summary>Model</summary>
+<img src="docs/validation/models-py.png">
+</details>
+
+
+<details><summary>View</summary>
+<img src="docs/validation/views-py.png">
+</details>
 
 ### JS Validation
 JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, All functions marked as "unused" are called on click in HTML code segments, images of relevnt code is attached to validations.
