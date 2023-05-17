@@ -30,10 +30,10 @@
     - [Languages](#languages)
     - [Tools](#tools)
   - [Features](#features)
-    - [Logo and Nav-Bar/ Home buttons](#logo-and-nav-bar-home-buttons)
-    - [Footer](#footer)
-    - [Quiz page](#quiz-page)
-    - [Feedback Form](#feedback-form)
+    - [Logo and Nav-Bar](#logo-and-nav-bar)
+    - [](#)
+    - [Index](#index)
+    - [Contact Form](#contact-form)
   - [Validation](#validation)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
@@ -88,50 +88,52 @@
 #### First-time User
 
 1. As a first time user, I want to book a session
-2. As a first time user, I want to test my nutrition knowledge
+2. As a first time user, I want easy intuative navigation
 3. As a first time user, I want information presented in one location
 4. As a first time user, I want to get in contact for more info
 
 #### Returning User
 
-5. As a returning user I want to refresh my knowledge on fitness
-6. As a returning user I want to refresh my knowledge on nutrition
-7. As a returning user I want to see additional quesstions added
-8. As a returning user I want to be able to locate relevant social links
+5. As a returning user I want to sign back in 
+6. As a returning user I want to update bookings
+7. As a returning user I want to view bookings
+8. As a returning user I want to delete bookings
 
 #### Site Owner
 
-9. As a site owner I want people to locate relevant information to the quiz
-10. As a site owner I want people to be able to play as many times 
-11. As a site owner I want individuals to get in contact
+9. As a site owner I want people to locate relevant information to booking
+10. As a site owner I want people easily book and manage sessions
+11. As a site owner I want the ability to update or confirm bookings
 
 ## Design
 
 ### Design Choices
-Website design took into consideration company colors and elements. The website follows a clean and minimal design in order to make readability and accesability easy
+
+Website design took into consideration company colors and elements. The website follows a clean and minimal design in order to make readability and accesability easy. Which follows the motto of minimal fitness. A clean layout with relevant information.
 
 ### Colour
-Color Choices contain a slightly colder shade of greens and neutral greys and white to compliment all elements. A less satturated green was used as many associate the higher saturated colors with 'vegan'. Highlight color of oraange was used as it plays well with the secondary colors.
+
+Color choices for this project again were based solely on the company colors, being red/black/white with different shades  of grey to help accent element.
+
 <br>
 
 ![Color Scheme](docs/features/colors.png)
 
-
 ### Fonts
-Solway with a serif fall back was used as the main head text as it provides a nice playful and approachable flair to the website
-<br>
-Roboto with sans-serif fall back was used as it compliments solway and contrasts to its playful style without being out of place. It is also clear and concise.
+
+Montserrat, with a fall-back of sans-serif was used along with "Source Sans Pro", with the sans-serif fall-back. These were chosen because they evoke a modern and clean look, along with complementing geometry!
 
 ### Structure
-The Structure of the website is a clean and minimal approach as the main focus of the website is the quiz. Therefore the index page allows for ease of access to all relevant info. The nav bar is clean and simple with all elements being clear and intuative.
+
+The Structure of the website is a clean and minimal approach as the main focus of the website is the Crud Functionality Therefore the index page allows for ease of access to all relevant info. The nav bar is clean and simple with all elements being clear and intuative. The Index is the most animated, as the goal is to draw in people and be more welcoming. Clean design maintained throughout.
 
 <br>
 
-The website is made up of 3 pages:
+The website is made up of 8 pages:
 
-    -The home page that draws a user and links directly to other points of interest. 
-    -The fitness quiz page that contains the quiz script.
-    -A contact page that allows easy contact, validation.
+    -The User authenticated segments 
+    -The Index
+    -The CRUD Functions
 
 ### Wireframes
 
@@ -170,85 +172,72 @@ The website is made up of 3 pages:
     -Circle Crop
     -EmailJs
     -Canva
-    -Boot strap
+    -Boot strap 4
+    -ScrollReveal function
     -pixelr
+    -Django
+    -SummerNote
+    -Crispy Forms
 
 ## Features
 
-The Website consists of 3 pages with 11 features
 
-### Logo and Nav-Bar/ Home buttons
+
+### Logo and Nav-Bar
 
     -featured on all three pages
-    -Home page Icons have zoom effect and has all info on one page to prevent excessive travel
+    -Options changed based on user authentication
     -Nav bar is fully responsive and changes to a burger style on mobile devices. Nav bar links to all relevant pages allowing for quick access.
-    -Nav bar has selected item in order to give clear feedback to location as well as hover.
-    -Pages 2/3 have a slight difference in appearance but over all same design in order to not disrupt immersion.
-    -User stories adressed: 3, 9.
+    -Subtle animation for selected
+    -Pages 2/3 have a slight difference in appearance but over all same design in order to not disrupt immersion.-
+    relevant links lead to full Crud
+
     
-![Logo & Navbar](docs/features/nav-bar.png)
+![Logo & Navbar](docs/features/nav-user.png)
 
 <br>
 
-![Logo & Navbar](docs/features/nav-bar-select.png)
+![Logo & Navbar](docs/features/nav-new.png)
 
 <br>
 
-![Logo & Navbar](docs/features/burger-nav-home.png)
+![Logo & Navbar](docs/features/nav-burger-show.png)
 
-![Logo & Navbar](docs/features/burgerr-expanded.png)
+![Logo & Navbar](docs/features/nav-burger.png)
 
 
-### Footer
+### 
 
     -footer conistent on all pages with hover effect in order to provide clear feedback on selection
-    -User stories adressed: 8.
-
-![Footer and Selection](docs/features/socials.png)
-![Footer and Selection](docs/features/socials-select.png)
-
+    
+![Footer and Selection](docs/features/footer.png)
+![Footer and Selection](docs/features/footer-select.png)
 
 
-### Quiz page
+
+### Index
+
     -Clear UI
-    -Tracks score
-    -Cycles through questions and allows to restart when questions exhaust.
-    -Clear visuals for correct/incorect selections
-    -Quiz incrementss score 
-    -User stories adressed: 1, 2, 5, 6, 10.
+    -Responsive
+    -Scroll reveal adds dynamic element to page
+    -message handeling
+   
 
-![Quiz Segment](docs/features/start-funct.png)
-![Quiz Segment](docs/features/correct-increment-next.png)
-![Quiz Segment](docs/features/restart.png)
+![Index Segment](docs/features/scrollreveal().png)
 
-### Feedback Form
-    -Allows users to leave feedback for improvement of quiz etc.
+
+### Contact Form
+
+    -Allows users to leave feedback for general queries and concerns
     -Form validates email and name (full name and proper email)
     -Form Sends back email to me as soon as user leaves feedback
-    -User stories adreessed: 4, 7, 11. 
+    -Clear feedback
 
-![Feedback-form](docs/features/form-feat.png)
-
-<br>
-
-![Feedback-form](docs/features/invalidemail.png)
+![Contact-form](docs/features/contact-form.png)
 
 <br>
 
-![Feedback-form](docs/features/valid-email.png)
-
-<br>
-
-![Feedback-form](docs/features/fullname-rreeq.png)
-
-<br>
-
-![Feedback-form](docs/features/fullname-valid.png)
-
-<br>
-
-![Feedback-form](docs/features/feedback-to-me.png)
-
+![Contact-form](docs/features/contact-segment.png)
 
 
 
