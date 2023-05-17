@@ -64,10 +64,8 @@
 /* -----------Jumbotron */
 
 .jumbotron {
-    background-image: url("/static/img/mf-banner.png");
-    background-blend-mode: darken;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 28%, rgba(154, 155, 156, 1) 100%);
     background-attachment: fixed;
     color: var(--brand3);
 }
@@ -200,11 +198,13 @@
 }
 
 .tester_new .carousel-indicators li:nth-child(2) {
-    background-image: url("/static/img/person1.jpg");
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 28%, rgba(154, 155, 156, 1) 100%);
 }
 
 .tester_new .carousel-indicators li:nth-child(3) {
-    background-image: url("/static/img/person1.jpg");
+    background: rgb(0, 0, 0);
+    background: linear-gradient(357deg, rgba(0, 0, 0, 1) 28%, rgba(154, 155, 156, 1) 100%);
 }
 
 .carousel-indicators {
