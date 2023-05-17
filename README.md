@@ -255,16 +255,26 @@ W3C mark-up was utilised in order to validate html of the website. All Pages pas
 </details>
 
 <details><summary>login</summary>
-<img src="docs/validations/fitquiz-valid.png">
+<img src="docs/validations/login-valid.png">
 </details>
 
 <details><summary>logout</summary>
-<img src="docs/validations/cont-valid.png">
+<img src="docs/validations/logout-valid.png">
 </details>
 
-details><summary>Sign-Up</summary>
-<img src="docs/validations/cont-valid.png">
+<details><summary>Manage</summary>
+<img src="docs/validations/manage-valifd-html.png">
 </details>
+
+<details><summary>Sign-Up</summary>
+<img src="docs/validations/sign-up-valid.png">
+</details>
+
+<details><summary>Delete</summary>
+<img src="docs/validations/delete-valid-html.png">
+</details>
+
+
 
 <br>
 
@@ -297,18 +307,9 @@ CI Python linter used here
 ### JS Validation
 JSHint validator was utilised in order to make sure the javascript code passes standards with no errors or warnings, All functions marked as "unused" are called on click in HTML code segments, images of relevnt code is attached to validations.
 
-<details><summary>Index</summary>
-<img src="docs/validations/index-js.png">
-<img src="docs/validations/showmenu-explain.png">
-</details>
-<details><summary>Fitness Quiz</summary>
-<img src="docs/validations/jshint-fitquiz.png">
-<img src="docs/validations/showmenu-explain.png">
-</details>
-<details><summary>Feedback</summary>
-<img src="docs/validations/email-js.png">
-<img src="docs/validations/emailjs-explain.png">
-<img src="docs/validations/formfunct-explain.png">
+<details><summary>Email Js And Script</summary>
+<img src="docs/validations/script.png">
+<img src="docs/validations/sendEmail..png">
 </details>
 
 <br>
