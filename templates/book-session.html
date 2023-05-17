@@ -10,11 +10,19 @@
                     {{ form | crispy }}
                     <input type="submit" value="Book Now" class="btn btn-danger book-btn">
                 </form>
-                {% else %}
-                {% endif %}
+                
         </div>
-
+            }
     </div>
+    {% else %}
+    <div class="container manage-cont">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class ="font-head">You need to be logged in, in order to book a session!</h2>
+            </div>
+        </div>
+    </div>
+    {% endif %
 </div>
 
 {% endblock %}
