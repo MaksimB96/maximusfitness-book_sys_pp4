@@ -388,35 +388,35 @@ All media created by me using  <a href="https://www.canva.com/">Canva</a>, this 
 <br>
 Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
 <br>
-Burger Image by <a href="https://www.flaticon.com/free-icon/menu_4254068?term=menu-burger&page=1&position=2&page=1&position=2&related_id=4254068&origin=tag#">Andy Horvath</a>
-<br>
-X Image by <a href="https://www.flaticon.com/free-icon/close_2997911?term=x&page=1&position=5&page=1&position=5&related_id=2997911&origin=tag# ">Fuzzee</a>
+
     
 ### Code 
 
-1. 404 page code provided by Mo Shami_mentor from code institue
-2. favicon idea provided by Mo Shami_mentor, site used found <a href="https://favicon.io/"> here</a>
-3. Form Validation inspiraation by <a href="https://www.youtube.com/watch?v=fz8bwvn9lA4"> Easy Tutorials</a>
-4. Increment of answers inspired by LoveMaths by Code Institute
-5. Text shadow property taken from <a href="https://www.w3schools.com/cssref/css3_pr_text-shadow.php"> w3schools</a>
-6. Email Validation strings by <a href="https://www.w3resource.com/javascript/form/email-validation.php">W3Schools</a>
-7. Burger Nav bar help from tutor support
-8. Reset button functionality help from tutor support
+1. Booking System Inspiration SelmiTech : <a href="https://www.youtube.com/watch?v=3_3q_dE4_qs&t=649s">Youtube</a>
+2. Preloader idea : <a href="https://www.youtube.com/watch?v=Yf5d_Zx3AaI">Youtube</a>
+3. ScrollReveal() function : <a href="https://www.youtube.com/watch?v=ePgnR4gHIi4">Youtube</a>
+4. Carousel ideas : <a href="Carousel">Codepen</a>
+5. Understanding Widgets : <a href ="https://simpleisbetterthancomplex.com/tutorial/2019/01/03/how-to-use-date-picker-with-django.html">Here</a>
+6. Heavy inspiration from CI Hello Django and Blog Walkthrough
+7. Bootstrap Documentation
+8. Django Documentation
 9. EmailJs instructions may be found on <a href="https://www.emailjs.com/">EmailJS</a>
-10. Quiz inspiration taken from  <a href="https://www.youtube.com/watch?v=riDzcEQbX6k">Web Dev Simplified</a>
+
 
 
 ## Acknowledgements
 
 -I would like to thank Victor my mentor
 <br>
--CI for provide me the knowledge to under-take this task
+-CI for provide me the knowledge to under-take this task even though-it broke down near the end we still salvaged it
 <br>
--Tutor Support for provideing better knowledge to implement the code!
+-Tutor Support for provideing better knowledge to implement the code! Especially Ed, Josh Oisin
 <br>
--My beautiful girlfriend who almost got all my typos and My friend for design related advice
+-My beautiful girlfriend who almost got all my typos!
 <br>
 -The wonderful community over on Slack!
+<br>
+-Coffeee for keeping me up 38hrs straight trying to figure asset load errors
 
 
 
