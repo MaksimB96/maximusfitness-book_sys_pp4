@@ -137,17 +137,15 @@ The website is made up of 8 pages:
 
 ### Wireframes
 
-<details><summary>Home</summary>
-<img src="docs/wireframes/index-wireframe.png">
-</details>
+<details><summary>Home</summary><img src="docs/wireframes/index.png"></details>
 
-<details><summary>Quiz</summary>
-<img src="docs/wireframes/quiz-wireframe.png">
-</details>
+<details><summary>Book</summary><img src="docs/wireframes/book-session.png"></details>
 
-<details><summary>Feedback</summary>
-<img src="docs/wireframes/form-wireframe.png">
-</details>
+<details><summary>Manage</summary><img src="docs/wireframes/manage.png"></details>
+
+<details><summary>Update/Delete</summary><img src="docs/wireframes/update:delete.png"></details>
+
+Core functionality and views remain the same throughout. Sign in/login pages are custom 
 
 -Tablet view is exactly the same as desktop!
 
@@ -158,6 +156,9 @@ The website is made up of 8 pages:
     -HTML
     -CSS
     -Java Script
+    -Pyhton
+    -Django
+    
 
 ### Tools
 
@@ -171,6 +172,8 @@ The website is made up of 8 pages:
     -Favicon.io
     -Circle Crop
     -EmailJs
+    -postgresql
+    -psycopg
     -Canva
     -Boot strap 4
     -ScrollReveal function
