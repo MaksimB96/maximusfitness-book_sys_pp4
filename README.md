@@ -22,6 +22,7 @@
       - [Site Owner](#site-owner)
   - [Design](#design)
     - [Design Choices](#design-choices)
+    - [Kanban-Board](#kanban-board)
     - [Colour](#colour)
     - [Fonts](#fonts)
     - [Structure](#structure)
@@ -112,13 +113,18 @@
 
 Website design took into consideration company colors and elements. The website follows a clean and minimal design in order to make readability and accesability easy. Which follows the motto of minimal fitness. A clean layout with relevant information.
 
+
+### Kanban-Board
+
+A kanban board was utilised to sub divide each story into an epic (3 in total) This helped spped development up with clear cut goals
+![Kanban]()
 ### Colour
 
 Color choices for this project again were based solely on the company colors, being red/black/white with different shades  of grey to help accent element.
 
 <br>
 
-![Color Scheme](docs/features/colors.png)
+![Color Scheme](docs/features/kanban.png)
 
 ### Fonts
 
