@@ -254,11 +254,15 @@ W3C mark-up was utilised in order to validate html of the website. All Pages pas
 <img src="docs/validations/index-valid.png">
 </details>
 
-<details><summary>Fitness Quiz</summary>
+<details><summary>login</summary>
 <img src="docs/validations/fitquiz-valid.png">
 </details>
 
-<details><summary>Feedback</summary>
+<details><summary>logout</summary>
+<img src="docs/validations/cont-valid.png">
+</details>
+
+details><summary>Sign-Up</summary>
 <img src="docs/validations/cont-valid.png">
 </details>
 
