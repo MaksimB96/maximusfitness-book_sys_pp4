@@ -2,9 +2,9 @@
 
 (Developer: Maksims Buraks)
 
-![Mockup image](docs/am-i-responsive.png)
+![Mockup image](docs/mf-banner.png)
 
-[live web-page](https://maksimb96.github.io/LoveBody/)
+[live web-page](https://maximus-booking-sys.herokuapp.com/)
 
 ## Table of contents
 
