@@ -40,8 +40,6 @@
     - [CSS Validation](#css-validation)
     - [Python Validation](#python-validation)
     - [JS Validation](#js-validation)
-    - [Accessability](#accessability)
-    - [Performance](#performance)
     - [Tests](#tests)
       - [Devices tested on on:](#devices-tested-on-on)
       - [Browser tested on on:](#browser-tested-on-on)
@@ -318,37 +316,15 @@ JSHint validator was utilised in order to make sure the javascript code passes s
 
 <br>
 
-### Accessability
-Wave WebAIM was utilized in order to make sure the website met high accessability standards. All pages pass with no errors or contrast errors. Warnings are due to things such as logo having the same link as the hom, which is an intentional feature. The form segment states the labels are not owned by input eventhough they have been propeerly attributed.
-
-<details><summary>Index</summary>
-<img src="docs/validations/indexwave.png">
-</details>
-<details><summary>Fitness Quiz</summary>
-<img src="docs/validations/quizwave.png">
-</details>
-<details><summary>Feedback</summary>
-<img src="docs/validations/feedbackwave.png">
-</details>
-
-<br>
-
-### Performance
-Google light house was used in order to confirm good standards of performace
-
-<details><summary>Index</summary>
-<img src="docs/validations/index-perform.png">
-</details>
-<details><summary>Fitness Quiz</summary>
-<img src="docs/validations/fitquiz-perform.png">
-</details>
-<details><summary>Feedback</summary>
-<img src="docs/validations/form-perform.png">
-</details>
-
-<br>
-
 ### Tests
+-login/Crud Functionality functionality:
+    <img src="docs/features/booking-created.png">
+    <img src="docs/features/admin-confirm.png">
+    <img src="docs/features/booking-delete.png">
+    <img src="docs/features/sign-in.png">
+    <img src="docs/features/sign-out.png">
+    <img src="docs/features/admin-view.png">
+
 
 #### Devices tested on on:
     -Iphone SE, XR, 11, 12, 13
@@ -367,18 +343,21 @@ Google light house was used in order to confirm good standards of performace
 ## Deployment
 
 Deployment of site was acheived through these steps:
-1. I navigated to the settings section on git hub repositories on my repository.
-2. I then selected the pages link on the left side.
-3. I then selected source for the branch prompt.
-4. Roughly, 2 minutes after refreshing I recieved a link to my site: https://maksimb96.github.io/LoveBody/ 
+    -before deployment we soft deploy.
+    -This means set up all vars relating to urls and databases and configure the variables
+    -After Project completion and soft launch disable, disable_collect static and make sure debug is false
+    -Once all is in place commit changes to git hub, followed by deployment to Heroku
+    -Once deployment of site is complete you are provided with your app url!
+
 
 ## Future Features
 
 There are a few more feartures that I would like to implement in the future. These Include:
-1.Polished Nav Bar with smooth transition
-2.Timer function to quiz
-3.Randomize the order of how button answers display
-4.A progress Bar to track progress
+1.Further Form Validation
+2.Implement Send_mail
+3.Add pt packages segment
+4.A Feedback Section/ Possibly rating system
+
 
 ## Credits
 
@@ -417,15 +396,3 @@ Any Icons used found on <a href="https://fontawesome.com/">Font Awesome</a>
 -The wonderful community over on Slack!
 <br>
 -Coffeee for keeping me up 38hrs straight trying to figure asset load errors
-
-
-
-
-
-
-
-
-
-
-
-
