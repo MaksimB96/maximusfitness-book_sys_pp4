@@ -64,7 +64,7 @@
 /* -----------Jumbotron */
 
 .jumbotron {
-    background-image: url("..img/mf-banner.png");
+    background-image: url("{% static 'img/mf-banner.png' %}");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
