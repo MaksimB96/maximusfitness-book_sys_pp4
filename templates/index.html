@@ -135,7 +135,7 @@
         <div class="row">
             <div class="col-md-6 col-sm-12">
                 <div class="contact-form">
-                    <form name="index-form" method="post" id="contact_form_index" onsubmit="sendEmail(this); return false;">
+                    <form name="index-form" method="post" id="contact_form_index" onsubmit="return sendEmail(this);">
                         {% csrf_token %}
                         <div class="con-name form-group">
                             <input type="text" class="form-control font-body" aria-describedby="emailHelp"
