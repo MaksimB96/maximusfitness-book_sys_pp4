@@ -7,39 +7,6 @@ window.addEventListener("load", function () {
 
 
 /**
- * This function validates contact form on index
- */
-
-function validation(){
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("emailaddress").value;
-    var message = document.getElementById("text_area").value;
-    var error_message = document.getElementById("error_message");
-    var text;
-
-    if(name.length < 5){
-        text = "Please Enter a valid name";
-        error_message.innerHTML = text;
-        return false;
-    }
-
-    if(email.indexOf("@") == -1 || email.length < 6){
-        text = "Please Enter A Valid Email";
-        error_message.innerHTML = text;
-        return false;
-    }
-
-    if(message.length <= 50){
-        text = "Please Enter A Valid Message Above 50 Characters";
-        error_message.innerHTML = text;
-        return false;
-    }
-
-    return true;
-}
-
-
-/**
  * Scroll reveal utilizes npm to create on scroll interactivity
  */
 
