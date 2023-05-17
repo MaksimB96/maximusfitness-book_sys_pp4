@@ -1,4 +1,6 @@
-{% extends 'base.html' %} {% block content %} {% load crispy_forms_tags %}
+{% extends 'base.html' %}
+{% block content %}
+{% load crispy_forms_tags %}
 
 <div class="container-fluid book-in-cont">
     <div class="row book-content mx-auto">
@@ -12,7 +14,7 @@
                 </form>
                 
         </div>
-            }
+            
     </div>
     {% else %}
     <div class="container manage-cont">
@@ -22,7 +24,6 @@
             </div>
         </div>
     </div>
-    {% endif %
 </div>
-
+    {% endif %}
 {% endblock %}
