@@ -22,7 +22,7 @@
 /* -------------------------------------------Pre-Loader */
 
 #preloader {
-    background: var(--brand2) url("{% static 'img/preloader.gif' %}") no-repeat center;
+    background: var(--brand2) url("..img/preloader.gif") no-repeat center;
     background-size: 15%;
     height: 100vh;
     width: 100%;
@@ -64,7 +64,7 @@
 /* -----------Jumbotron */
 
 .jumbotron {
-    background: url("{% static 'img/mf-banner.png' %}");
+    background: url("..img/mf-banner.png");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,7 +190,7 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    background-image: url("{% static 'img/person1.jpg' %}");
+    background-image: url("../img/person1.jpg");
     background-position: center;
     background-size: cover;
     border: 5px solid var(--brand1);
@@ -201,11 +201,11 @@
 }
 
 .tester_new .carousel-indicators li:nth-child(2) {
-    background-image: url("{% static 'img/person1.jpg' %}");
+    background-image: url("../img/person1.jpg");
 }
 
 .tester_new .carousel-indicators li:nth-child(3) {
-    background-image: url("{% static 'img/person1.jpg' %}");
+    background-image: url("../img/person1.jpg");
 }
 
 .carousel-indicators {
