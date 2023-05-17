@@ -45,8 +45,6 @@
     - [Tests](#tests)
       - [Devices tested on on:](#devices-tested-on-on)
       - [Browser tested on on:](#browser-tested-on-on)
-    - [Testing User Stories](#testing-user-stories)
-  - [Bugs](#bugs)
   - [Deployment](#deployment)
   - [Future Features](#future-features)
   - [Credits](#credits)
@@ -116,8 +114,8 @@ Website design took into consideration company colors and elements. The website 
 
 ### Kanban-Board
 
-A kanban board was utilised to sub divide each story into an epic (3 in total) This helped spped development up with clear cut goals
-![Kanban]()
+A kanban board was utilised to sub divide each story into an epic (3 in total) This helped spped development up with clear cut goals can be loacted in the projects tab!
+
 ### Colour
 
 Color choices for this project again were based solely on the company colors, being red/black/white with different shades  of grey to help accent element.
@@ -365,69 +363,6 @@ Google light house was used in order to confirm good standards of performace
     -Safari
     -Brave/Brave Mobile
 
-### Testing User Stories
-
-1. As a first time user, I want to test my fitness knowledge
-
-2. As a first time user, I want to test my nutrition knowledge
-
-5. As a returning user I want to refresh my knowledge on fitness
-
-6. As a returning user I want to refresh my knowledge on nutrition
-
-7. As a returning user I want to see additional questions added
-
-3. As a first time user, I want information presented in one location
-
-4. As a first time user, I want to leave feedback for further addition of questions
-
-9. As a site owner I want people to locate relevant information to the quiz
-
-10. As a site owner I want people to be able to play as many times
-
-11. As a site owner I want individuals to get in contact
-
-
-<br>
-
-| **Feature** | **Action** | **Expected Results** | **Final Result** |
-|-------------|------------|----------------------|------------------|
-|             |            |                      |                  |
-| Home page, Linked Icons| Burger Menu/ Desktop menu show relevant info, icons link to poi's| Interactive Elements prompt to trravel to relevant poi's| Home page prompts user to travel to all locations from home page|
-|Quiz| Allows user to test knowledge in relation to fitness| Clear visual indicators for correct/wrong answer, questions cycle and then reset as intended|Quiz Works as intended|
-|Feedback Form| Input fields only submit once form validated| Form validates inputs and sends feedback to me| Form Works as intended|
-
-<details><summary>Screenshot</summary>
-<img src="docs/testing-features/index-uf.jpg">
-<img src="docs/testing-features/quizuf-1.jpg">
-<img src="docs/testing-features/quizuf2.jpg">
-<img src="docs/testing-features/quizuf3.jpg">
-<img src="docs/testing-features/formuf.jpg">
-</details>
-<br>
-
-
-
-8. As a returning user I want to be able to locate relevant social links
-
-| **Feature** | **Action** | **Expected Results** | **Final Result** |
-|-------------|------------|----------------------|------------------|
-|             |            |                      |                  |
-|Social Media Links|User has access socials| Functional links| Works as intended|
-<details><summary>Screenshot</summary>
-<img src="docs/testing-features/socialsuf.jpg">
-</details>
-<br>
-
-
-## Bugs
-
-| **Bug** | **Fix** | 
-|---------|---------|
-|         |         | 
-|Restart Scores did not work as intended| Created new button instead of changing inner html and defind it, and added functions that reset score on click via event listener|
-|Form not validating|Added correct string in order validate |
-|Initial break of quiz| Corrected elements by id and programmed restart button and function correctly|
 
 ## Deployment
 
