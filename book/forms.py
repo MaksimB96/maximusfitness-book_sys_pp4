@@ -56,3 +56,9 @@ class UpdateBooking(forms.ModelForm):
                 'type': 'time'}
                 ),
         }
+    
+    def clean_date(self):
+        data = self.cleaned_data['date']
+        if data < timezone.now().date():
+            raise forms.ValidationError("You Can't book a date already past!")
+        return data
