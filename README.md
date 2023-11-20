@@ -114,13 +114,15 @@ Website design took into consideration company colors and elements. The website 
 
 A kanban board was utilised to sub divide each story into an epic (3 in total) This helped spped development up with clear cut goals can be loacted in the projects tab!
 
+![Color Scheme](docs/features/kanban.png)
+
 ### Colour
 
 Color choices for this project again were based solely on the company colors, being red/black/white with different shades  of grey to help accent element.
 
 <br>
 
-![Color Scheme](docs/features/kanban.png)
+![Color Scheme](docs/features/colors.png)
 
 ### Fonts
 
@@ -140,13 +142,13 @@ The website is made up of 8 pages:
 
 ### Wireframes
 
-<details><summary>Home</summary><img src="docs/wireframes/index.png"></details>
+<details><summary>Home</summary><img src="docs/wireframe/index.png"></details>
 
-<details><summary>Book</summary><img src="docs/wireframes/book-session.png"></details>
+<details><summary>Book</summary><img src="docs/wireframe/book-session.png"></details>
 
-<details><summary>Manage</summary><img src="docs/wireframes/manage.png"></details>
+<details><summary>Manage</summary><img src="docs/wireframe/manage.png"></details>
 
-<details><summary>Update/Delete</summary><img src="docs/wireframes/update:delete.png"></details>
+<details><summary>Update/Delete</summary><img src="docs/wireframe/update:delete.png"></details>
 
 Core functionality and views remain the same throughout. Sign in/login pages are custom 
 
