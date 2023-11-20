@@ -32,8 +32,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['8000-maksimb96-maximusfitness-xbq5t03asb.us2.codeanyapp.com',
-                 'maximus-booking-sys.herokuapp.com']
+ALLOWED_HOSTS = ['https://fmm-pp4-55f9d2d6c6b5.herokuapp.com/']
 
 
 # Application definition
