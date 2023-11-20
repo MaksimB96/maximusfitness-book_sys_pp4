@@ -4,7 +4,7 @@
 
 ![Mockup image](docs/mf-banner.png)
 
-[live web-page](https://maximus-booking-sys.herokuapp.com/)
+[live web-page](https://fmm-pp4-55f9d2d6c6b5.herokuapp.com/)
 
 ## Table of contents
 
