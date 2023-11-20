@@ -32,7 +32,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['https://fmm-pp4-55f9d2d6c6b5.herokuapp.com/']
+ALLOWED_HOSTS = ['https://fmm-pp4-55f9d2d6c6b5.herokuapp.com/', '8000-maksimb96-maximusfitnes-5whejxt9yyy.ws-eu106.gitpod.io']
 
 
 # Application definition
@@ -163,6 +163,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
